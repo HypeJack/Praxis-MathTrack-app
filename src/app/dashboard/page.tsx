@@ -4,35 +4,22 @@ import Link from "next/link";
 import Image from "next/image";
 import MathTrackLogo from "@/assets/logo.png";
 import { User, Check, Circle, AlertCircle, Play, BarChart3, TrendingUp, ChevronRight } from "lucide-react";
+import { useDiagnosticStore, DomainKey } from "@/store/diagnosticStore";
+import { PERSONA_DATA } from "@/data/personas";
+import { TriadTriangle } from "@/components/TriadTriangle";
 
 export default function Dashboard() {
-    const competencies = [
-        { label: "Computation", score: 85, value: "85%" },
-        { label: "Receptive", score: 70, value: "70%" },
-        { label: "Expressive", score: 60, value: "60%" },
-        { label: "Confidence", score: 84, value: "4.2 / 5" }
-    ];
-
-    const domains = [
-        { name: "Stats & Probability", strength: "Growth Area" },
-        { name: "Functions & Calculus", strength: "Growth Area" },
-        { name: "Geometry", strength: "Mid" },
-        { name: "Algebra", strength: "High" },
-        { name: "Number & Quantity", strength: "High" }
-    ];
-
-    // Logic Mapping Placeholder for User Persona
-    // Based on current mock scores (High Computation: 85, Low Confidence: assumed for persona match)
-    const persona = {
+    const { triadPosition, persona: personaKey, isComplete, scores } = useDiagnosticStore();
+    const persona = personaKey ? PERSONA_DATA[personaKey] : {
         name: "Stealth Scholar",
         icon: "🦉",
-        note: "You know the math better than you think. Let's work on your speed.",
+        tagline: "You think like a mathematician. Now let's find the words to match.",
     };
 
     const getDomainStyle = (strength: string) => {
         switch (strength) {
             case "High": return "bg-green-50 border-green-200";
-            case "Mid": return "bg-yellow-50 border-yellow-200"; // bg-gold-50 equivalent
+            case "Mid": return "bg-yellow-50 border-yellow-200";
             case "Growth Area": return "bg-orange-50 border-orange-200";
             default: return "bg-gray-50 border-gray-200";
         }
@@ -66,12 +53,42 @@ export default function Dashboard() {
         }
     };
 
+    // Helper to determine strength based on scores
+    const getStrengthLabel = (domainKey: DomainKey) => {
+        const score = scores[domainKey];
+        if (!score) return "Growth Area";
+        const avg = ((score.computation ?? 0) + (score.receptiveLiteracy ?? 0) + (score.expressiveLiteracy ?? 0)) / 3;
+        if (avg >= 2.5) return "High";
+        if (avg >= 1.5) return "Mid";
+        return "Growth Area";
+    };
+
+    const domains = [
+        { name: "Stats & Probability", strength: getStrengthLabel('iv') },
+        { name: "Functions & Calculus", strength: getStrengthLabel('ii') },
+        { name: "Geometry", strength: getStrengthLabel('iii') },
+        { name: "Algebra", strength: getStrengthLabel('ib') },
+        { name: "Number & Quantity", strength: getStrengthLabel('ia') }
+    ];
+
+    if (!isComplete || !triadPosition) {
+        return (
+            <main className="w-full max-w-[480px] min-h-[100dvh] mx-auto flex flex-col items-center justify-center bg-bone-white p-6 text-center">
+                <h1 className="font-playfair font-bold text-2xl text-pine-green mb-4">Diagnostic Incomplete</h1>
+                <p className="text-gray-600 mb-8">Please complete your diagnostic to access your personalized roadmap.</p>
+                <Link href="/diagnostic/domain-ia/intro" className="bg-pine-dark text-white px-8 py-3 rounded-xl font-bold">
+                    Start Diagnostic
+                </Link>
+            </main>
+        );
+    }
+
     return (
         <main className="w-full max-w-[480px] min-h-[100dvh] mx-auto flex flex-col bg-bone-white font-inter relative shadow-xl overflow-x-hidden">
             {/* Step 1: Layout & Navigation */}
             <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
                 <div className="flex items-center justify-between px-6 py-4">
-                    <Image src={MathTrackLogo} alt="MathTrack Logo" width={140} height={30} className="h-7 w-auto object-contain" />
+                    <Image src="/White MathTrack Institute Logo.png" alt="MathTrack Logo" width={140} height={30} className="h-7 w-auto object-contain brightness-0" />
                     <Link href="/profile" className="hover:opacity-80 transition-opacity">
                         <div className="w-10 h-10 rounded-full bg-pine-dark flex items-center justify-center text-white font-inter font-bold text-[14px]">
                             JS
@@ -91,7 +108,7 @@ export default function Dashboard() {
 
                 {/* User Persona Card */}
                 <p className="font-inter text-[16px] text-gray-600 mb-6">
-                    Based on your performance across the 25 diagnostic tasks, here is your MathTrack Persona.
+                    Based on your performance across the diagnostic, here is your MathTrack Persona.
                 </p>
                 <div className="bg-pine-green rounded-[16px] p-6 shadow-md mb-10 flex items-center space-x-4">
                     <div className="text-[48px] leading-none shrink-0" aria-hidden="true">
@@ -102,34 +119,17 @@ export default function Dashboard() {
                             {persona.name}
                         </span>
                         <span className="font-inter text-[14px] opacity-90 leading-snug">
-                            {persona.note}
+                            {persona.tagline}
                         </span>
                     </div>
                 </div>
 
-                {/* Step 3: The 4-Pillar Visualizer */}
-                <div className="bg-white rounded-[16px] border border-gray-200 p-6 shadow-sm mb-10">
-                    <h2 className="font-inter font-bold text-[14px] text-pine-dark uppercase tracking-wide mb-6">
-                        Core Competencies
+                {/* Step 3: The Triad Triangle */}
+                <div className="bg-white rounded-[16px] border border-gray-200 p-8 shadow-sm mb-10 flex flex-col items-center">
+                    <h2 className="w-full font-inter font-bold text-[14px] text-pine-dark uppercase tracking-wide mb-6">
+                        Pillar Visualization
                     </h2>
-                    <div className="flex justify-between items-end h-[180px] px-2">
-                        {competencies.map((item) => (
-                            <div key={item.label} className="flex flex-col items-center flex-1">
-                                <span className="font-inter font-bold text-[18px] text-pine-dark mb-2">
-                                    {item.value}
-                                </span>
-                                <div className="w-12 h-[100px] bg-gray-100 rounded-t-[6px] relative overflow-hidden mb-3">
-                                    <div
-                                        className="absolute bottom-0 left-0 w-full bg-accent-light-green rounded-t-[6px] transition-all duration-1000 ease-out"
-                                        style={{ height: `${item.score}%` }}
-                                    />
-                                </div>
-                                <span className="font-inter font-bold text-[12px] text-gray-500 text-center tracking-wide uppercase px-1">
-                                    {item.label}
-                                </span>
-                            </div>
-                        ))}
-                    </div>
+                    <TriadTriangle position={triadPosition} animated={false} size={280} />
                 </div>
 
                 {/* Step 4: Mastery Map (Grid) */}
