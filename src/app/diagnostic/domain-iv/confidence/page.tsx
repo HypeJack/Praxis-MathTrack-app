@@ -3,10 +3,13 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import Link from "next/link";
+import { useDiagnosticStore } from "@/store/diagnosticStore";
+import { useRouter } from "next/navigation";
 
 export default function ConfidenceDomainIV() {
     const [rating, setRating] = useState<number | null>(null);
-    const [isHovered, setIsHovered] = useState<number | null>(null);
+    const router = useRouter();
+    const { setDomainScore, completeDiagnostic } = useDiagnosticStore();
 
     const ratings = [1, 2, 3, 4, 5];
     const labels: { [key: number]: string } = {
@@ -15,6 +18,13 @@ export default function ConfidenceDomainIV() {
         3: "Somewhat confident",
         4: "Pretty solid",
         5: "I've got this."
+    };
+
+    const handleFinish = () => {
+        if (!rating) return;
+        setDomainScore('iv', { confidence: rating });
+        completeDiagnostic();
+        router.push("/reveal");
     };
 
     return (
@@ -89,16 +99,16 @@ export default function ConfidenceDomainIV() {
 
                 {/* Step 4: CTA & Navigation */}
                 <div className="mt-auto pt-8">
-                    <Link
-                        href={rating ? "/complete" : "#"}
-                        onClick={(e) => !rating && e.preventDefault()}
+                    <button
+                        onClick={handleFinish}
+                        disabled={!rating}
                         className={`w-full py-4 px-6 rounded-[12px] flex items-center justify-center font-inter font-bold text-[18px] transition-all duration-300 shadow-md ${rating
                             ? "bg-pine-dark text-white hover:bg-pine-green active:scale-95 opacity-100"
                             : "bg-gray-200 text-gray-400 cursor-not-allowed opacity-50"
                             }`}
                     >
-                        Finish Diagnostic &rarr;
-                    </Link>
+                        Finish Diagnostic →
+                    </button>
                 </div>
             </div>
         </main>
