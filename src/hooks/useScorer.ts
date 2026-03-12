@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import type { ScoreRequest, ScoreResponse } from '@/app/api/score/route';
+import type { ScoreRequest, ScoreResponse } from '@/types/score';
 
 type ScorerStatus = 'idle' | 'scoring' | 'complete' | 'error';
 

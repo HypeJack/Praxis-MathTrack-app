@@ -1,6 +1,6 @@
 'use client';
 
-import { ScoreResponse } from '@/app/api/score/route';
+import { ScoreResponse } from '@/types/score';
 import { MathFeedback } from './MathFeedback';
 
 const SCORE_CONFIG = {
