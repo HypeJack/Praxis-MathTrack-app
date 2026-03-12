@@ -3,10 +3,19 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import Link from "next/link";
+import { useScorer } from "@/hooks/useScorer";
+import { useDiagnosticStore } from "@/store/diagnosticStore";
+import { ScorerFeedback } from "@/components/ScorerFeedback";
+import { useRouter } from "next/navigation";
 
-export default function ReceptiveLiteracyTask() {
+export default function ExpressiveLiteracyTask() {
     const [text, setText] = useState("");
+    const [hasRetried, setHasRetried] = useState(false);
     const charLimit = 400;
+    const router = useRouter();
+
+    const { score, status, result, reset } = useScorer();
+    const { setDomainScore, setCurrentStep } = useDiagnosticStore();
 
     const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         if (e.target.value.length <= charLimit) {
@@ -14,7 +23,36 @@ export default function ReceptiveLiteracyTask() {
         }
     };
 
-    const isSubmittable = text.trim().length >= 10;
+    const isSubmittable = text.trim().length >= 20;
+
+    const handleSubmit = async () => {
+        const prompt = 'A student tells you: "I think √48 + √75 = √123 because you just add what\'s under the square roots." How would you respond? Use mathematical language appropriate for a secondary student.';
+        const scored = await score({
+            taskType: 'expressive',
+            domain: 'ia',
+            prompt,
+            response: text,
+        });
+
+        // Commit to store immediately
+        setDomainScore('ia', {
+            expressiveLiteracy: scored.score,
+            expressiveRaw: text,
+        });
+    };
+
+    const handleContinue = () => {
+        setCurrentStep('ia', 'confidence');
+        router.push("/diagnostic/domain-ia/confidence");
+    };
+
+    const handleRetry = () => {
+        if (!hasRetried) {
+            setHasRetried(true);
+            setText("");
+            reset();
+        }
+    };
 
     return (
         <main className="w-full max-w-[480px] min-h-[100dvh] mx-auto flex flex-col bg-bone-white font-inter relative shadow-xl overflow-x-hidden">
@@ -74,14 +112,31 @@ export default function ReceptiveLiteracyTask() {
                     <p className="font-inter text-[14px] text-gray-500 italic">
                         Aim for 3&ndash;5 sentences. Write as if speaking to a curious 10th grader.
                     </p>
-                    <textarea
-                        rows={5}
-                        value={text}
-                        onChange={handleInputChange}
-                        placeholder="Tap to type your response..."
-                        className="w-full p-4 rounded-[10px] bg-bone-white border border-transparent focus:border-pine-green focus:ring-1 focus:ring-pine-green text-pine-dark font-inter text-base transition-all outline-none resize-none"
-                    />
-                    <div className="flex justify-end">
+                    {status === 'idle' || status === 'scoring' ? (
+                        <textarea
+                            rows={5}
+                            value={text}
+                            onChange={handleInputChange}
+                            placeholder="Tap to type your response..."
+                            disabled={status === 'scoring'}
+                            className="w-full p-4 rounded-[10px] bg-bone-white border border-transparent focus:border-pine-green focus:ring-1 focus:ring-pine-green text-pine-dark font-inter text-base transition-all outline-none resize-none disabled:opacity-50"
+                        />
+                    ) : null}
+
+                    {status === 'scoring' && (
+                        <p className="text-sm text-center text-gray-500 animate-pulse py-4">Analyzing your response...</p>
+                    )}
+
+                    {(status === 'complete' || status === 'error') && result && (
+                        <ScorerFeedback
+                            result={result}
+                            onContinue={handleContinue}
+                            onRetry={handleRetry}
+                            canRetry={!hasRetried}
+                        />
+                    )}
+
+                    <div className="flex justify-end mt-2">
                         <span className={`font-inter text-[13px] ${text.length >= charLimit ? 'text-red-500 font-semibold' : 'text-gray-500'}`}>
                             {text.length} / {charLimit}
                         </span>
@@ -89,18 +144,20 @@ export default function ReceptiveLiteracyTask() {
                 </div>
 
                 {/* Step 5: CTA & Navigation */}
-                <div className="mt-auto pt-8">
-                    <Link
-                        href={isSubmittable ? "/diagnostic/domain-ia/confidence" : "#"}
-                        onClick={(e) => !isSubmittable && e.preventDefault()}
-                        className={`w-full bg-accent-green rounded-[12px] py-4 px-6 flex items-center justify-center text-white font-inter font-bold text-[18px] shadow-md transition-all duration-200 ${isSubmittable
-                            ? "opacity-100 active:scale-[0.98] hover:bg-[#5aa177]"
-                            : "opacity-50 cursor-not-allowed"
-                            }`}
-                    >
-                        Submit &rarr;
-                    </Link>
-                </div>
+                {(status === 'idle' || status === 'scoring') && (
+                    <div className="mt-auto pt-8">
+                        <button
+                            onClick={handleSubmit}
+                            disabled={!isSubmittable || status === 'scoring'}
+                            className={`w-full bg-accent-green rounded-[12px] py-4 px-6 flex items-center justify-center text-white font-inter font-bold text-[18px] shadow-md transition-all duration-200 ${isSubmittable && status !== 'scoring'
+                                ? "opacity-100 active:scale-[0.98] hover:bg-[#5aa177]"
+                                : "opacity-50 cursor-not-allowed"
+                                }`}
+                        >
+                            {status === 'scoring' ? 'Analyzing...' : 'Submit →'}
+                        </button>
+                    </div>
+                )}
             </div>
         </main>
     );

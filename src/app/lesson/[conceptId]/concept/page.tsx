@@ -26,7 +26,7 @@ export default function SlopeConceptNarrative() {
 
                 {/* AI Narration Body */}
                 <div className="space-y-6 font-inter text-[16px] text-pine-dark leading-relaxed">
-                    {activeScenario.conceptNarrative.split('\n\n').map((para, i) => (
+                    {((activeScenario as any).conceptNarrative || activeScenario.closingNarrative || "").split('\n\n').map((para: string, i: number) => (
                         <p key={i}>{para}</p>
                     ))}
 

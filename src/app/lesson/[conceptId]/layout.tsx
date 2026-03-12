@@ -36,7 +36,7 @@ function SlopeLessonContent({ children }: { children: React.ReactNode }) {
                 <div className="flex items-center gap-4">
                     {/* Back to Roadmap */}
                     <Link 
-                        href={`/domain/${activeScenario.domain.toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")}`}
+                        href={`/domain/${(activeScenario.domain || "Functions & Calculus").toLowerCase().replace(/ & /g, "-").replace(/\s+/g, "-")}`}
                         className="hidden md:flex items-center gap-2 text-bone-white/80 hover:text-bone-white font-inter text-[14px] font-medium transition-colors group"
                     >
                         <ArrowLeft size={16} className="group-hover:-translate-x-0.5 transition-transform" />

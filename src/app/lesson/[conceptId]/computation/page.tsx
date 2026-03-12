@@ -85,7 +85,7 @@ export default function SlopeComputation() {
                                 value={answers.partB}
                                 onChange={(e) => setAnswers({ ...answers, partB: e.target.value })}
                             >
-                                {comp.partB.options.map((opt, i) => (
+                                {comp.partB.options?.map((opt, i) => (
                                     <option key={i} value={i === 0 ? "" : opt} disabled={i === 0} className={i === 0 ? "text-gray-400" : ""}>
                                         {opt}
                                     </option>

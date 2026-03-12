@@ -120,7 +120,7 @@ export default function SlopeSummary() {
                         Coach&apos;s Note
                     </h3>
                     <p className="font-inter text-[16px] text-pine-dark leading-relaxed">
-                        {activeScenario.closingNarrative}
+                        {activeScenario.closingNarrative || ""}
                     </p>
                 </div>
 

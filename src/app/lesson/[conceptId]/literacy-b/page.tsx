@@ -83,7 +83,7 @@ export default function SlopeLiteracyB() {
                                     value={responses.understand}
                                     onChange={(e) => setResponses({ ...responses, understand: e.target.value })}
                                 >
-                                    {data.dropdown1.options.map((opt, i) => (
+                                    {data.dropdown1?.options?.map((opt: string, i: number) => (
                                         <option key={i} value={i === 0 ? "" : opt} disabled={i === 0} className={i === 0 ? "text-gray-400" : ""}>
                                             {opt}
                                         </option>
@@ -101,7 +101,7 @@ export default function SlopeLiteracyB() {
                                     value={responses.misconception}
                                     onChange={(e) => setResponses({ ...responses, misconception: e.target.value })}
                                 >
-                                    {data.dropdown2.options.map((opt, i) => (
+                                    {data.dropdown2?.options?.map((opt: string, i: number) => (
                                         <option key={i} value={i === 0 ? "" : opt} disabled={i === 0} className={i === 0 ? "text-gray-400" : ""}>
                                             {opt}
                                         </option>
@@ -119,7 +119,7 @@ export default function SlopeLiteracyB() {
                                     value={responses.respond}
                                     onChange={(e) => setResponses({ ...responses, respond: e.target.value })}
                                 >
-                                    {data.dropdown3.options.map((opt, i) => (
+                                    {data.dropdown3?.options?.map((opt: string, i: number) => (
                                         <option key={i} value={i === 0 ? "" : opt} disabled={i === 0} className={i === 0 ? "text-gray-400" : ""}>
                                             {opt}
                                         </option>
