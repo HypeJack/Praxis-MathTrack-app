@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+    /* Colors */
+    --color-pine-green: #0E5546;
+    --color-pine-dark: #0A2E23;
+    --color-bone-white: #F9F7F2;
+    --color-accent-green: #66AD83;
+    --color-accent-gold: #FB8B24;
+    --color-terracotta: #E36414;
+    --color-green-tint: #D4EDE0;
+    --color-gold-tint: #FEE8CE;
+
+    /* Typography */
+    --font-playfair: "Playfair Display", serif;
+    --font-inter: "Inter", sans-serif;
+
+    /* Spacing & Radius */
+    --spacing-base: 8px;
+    --radius-card: 16px;
+    --radius-button: 12px;
+
+    /* Semantic Mappings */
+    --color-primary: var(--color-pine-green);
+    --color-canvas: var(--color-bone-white);
+    --color-text-main: var(--color-pine-dark);
+
+    /* Animations */
+    --animate-scale-in: scale-in 600ms ease-out forwards;
+    --animate-fade-in: fade-in 600ms ease-out forwards;
+    --animate-float-up: float-up 20s linear infinite;
+    --animate-slide-up-fade: slide-up-fade 600ms ease-out forwards;
+    --animate-draw-triangle: draw-triangle 800ms ease-out forwards;
+    --animate-glow-pulse: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float-up {
+    0% {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.15;
+    }
+
+    90% {
+        opacity: 0.15;
+    }
+
+    100% {
+        transform: translateY(-20vh) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-up-fade {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes draw-triangle {
+    0% {
+        stroke-dasharray: 700;
+        stroke-dashoffset: 700;
+    }
+
+    100% {
+        stroke-dasharray: 700;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes glow-pulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+:root {
+    --background: var(--color-bone-white);
+    --foreground: var(--color-pine-dark);
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+    font-family: var(--font-playfair);
+}

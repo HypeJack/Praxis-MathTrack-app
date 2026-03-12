@@ -1,0 +1,837 @@
+[
+    {
+        "testId": "form-a",
+        "title": "Practice Test Form A",
+        "description": "Full-length secondary mathematics practice exam (66 questions).",
+        "questions": [
+            {
+                "id": "q1",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Which of the following defines a function f that is its own inverse?",
+                "options": [
+                    "f(x) = x^2",
+                    "f(x) = 1/x",
+                    "f(x) = e^x",
+                    "f(x) = 2x"
+                ],
+                "correctAnswer": "f(x) = 1/x",
+                "remediationId": "functions-inverses"
+            },
+            {
+                "id": "q2",
+                "domain": "Algebra",
+                "questionType": "Numeric Entry",
+                "prompt": "Solve for x: (x - 3)/x = (x - 3)/3 + 4. If no solution exists, enter 999.",
+                "correctAnswer": "999",
+                "remediationId": "algebra-rational-equations"
+            },
+            {
+                "id": "q3",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "In △ABC, if AB=8, BC=10, and AC=12, what is the value of cos(B)?",
+                "options": [
+                    "0.125",
+                    "0.250",
+                    "0.500",
+                    "0.800"
+                ],
+                "correctAnswer": "0.125",
+                "remediationId": "geometry-trigonometry"
+            },
+            {
+                "id": "q4",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Evaluate the limit: lim(x→2) (x^2 - 4)/(x^2 - x - 2).",
+                "options": [
+                    "4/3",
+                    "3/4",
+                    "1",
+                    "Does not exist"
+                ],
+                "correctAnswer": "4/3",
+                "remediationId": "calculus-limits"
+            },
+            {
+                "id": "q5",
+                "domain": "Statistics & Probability",
+                "questionType": "Numeric Entry",
+                "prompt": "A set of 5 test scores has a mean of 80. If a 6th score of 92 is added, what is the new mean?",
+                "correctAnswer": "82",
+                "remediationId": "stats-outliers"
+            },
+            {
+                "id": "q6",
+                "domain": "Number & Quantity",
+                "questionType": "Multiple Choice",
+                "prompt": "Which expression is equivalent to 64^(2/3)?",
+                "options": [
+                    "16",
+                    "8",
+                    "4",
+                    "32"
+                ],
+                "correctAnswer": "16",
+                "remediationId": "number-rational-exponents"
+            },
+            {
+                "id": "q7",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "For what value of k will the system 2x + 3y = 8 and 4x + ky = 10 have no solution?",
+                "options": [
+                    "6",
+                    "3",
+                    "2",
+                    "4"
+                ],
+                "correctAnswer": "6",
+                "remediationId": "algebra-systems"
+            },
+            {
+                "id": "q8",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "If f(x) = log₂(x), what is the value of f(32) - f(8)?",
+                "options": [
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                "correctAnswer": "2",
+                "remediationId": "functions-logarithms"
+            },
+            {
+                "id": "q9",
+                "domain": "Geometry",
+                "questionType": "Numeric Entry",
+                "prompt": "A circle has a sector with a central angle of 60° and an area of 6π. What is the radius?",
+                "correctAnswer": "6",
+                "remediationId": "geometry-circles"
+            },
+            {
+                "id": "q10",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Find the slope of the line tangent to f(x) = e^(2x) at x = 0.",
+                "options": [
+                    "2",
+                    "1",
+                    "0",
+                    "e"
+                ],
+                "correctAnswer": "2",
+                "remediationId": "calculus-derivatives"
+            },
+            {
+                "id": "q11",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "Two parallel lines are cut by a transversal. If one angle is 72°, what is the measure of its same-side interior angle?",
+                "options": [
+                    "108°",
+                    "72°",
+                    "18°",
+                    "90°"
+                ],
+                "correctAnswer": "108°",
+                "remediationId": "geometry-parallel-lines"
+            },
+            {
+                "id": "q12",
+                "domain": "Number & Quantity",
+                "questionType": "Numeric Entry",
+                "prompt": "Find the modulus of the complex number z = 3 - 4i.",
+                "correctAnswer": "5",
+                "remediationId": "number-complex"
+            },
+            {
+                "id": "q13",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the volume of a right circular cylinder with a radius of 3 and a height of 10?",
+                "options": [
+                    "90π",
+                    "30π",
+                    "100π",
+                    "45π"
+                ],
+                "correctAnswer": "90π",
+                "remediationId": "geometry-volume"
+            },
+            {
+                "id": "q14",
+                "domain": "Number & Quantity",
+                "questionType": "Multiple Choice",
+                "prompt": "A runner covers 400 meters in 50 seconds. What is their speed in kilometers per hour?",
+                "options": [
+                    "28.8",
+                    "14.4",
+                    "32.0",
+                    "25.6"
+                ],
+                "correctAnswer": "28.8",
+                "remediationId": "number-dimensional-analysis"
+            },
+            {
+                "id": "q15",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "△ABC ∼ △DEF. If AB = 4, DE = 10, and the area of △ABC is 16, what is the area of △DEF?",
+                "options": [
+                    "100",
+                    "40",
+                    "64",
+                    "80"
+                ],
+                "correctAnswer": "100",
+                "remediationId": "geometry-similarity"
+            },
+            {
+                "id": "q16",
+                "domain": "Number & Quantity",
+                "questionType": "Multiple Choice",
+                "prompt": "Simplify (2 + 3i) + (5 - 7i).",
+                "options": [
+                    "7 - 4i",
+                    "7 + 10i",
+                    "-3 - 4i",
+                    "7 + 4i"
+                ],
+                "correctAnswer": "7 - 4i",
+                "remediationId": "number-complex"
+            },
+            {
+                "id": "q17",
+                "domain": "Geometry",
+                "questionType": "Numeric Entry",
+                "prompt": "What is the sum of the interior angles of a convex hexagon?",
+                "correctAnswer": "720",
+                "remediationId": "geometry-polygons"
+            },
+            {
+                "id": "id18",
+                "domain": "Number & Quantity",
+                "questionType": "Multiple Choice",
+                "prompt": "Given Matrix M = [[4, 1], [2, 3]], what is the determinant of M?",
+                "options": [
+                    "10",
+                    "14",
+                    "11",
+                    "7"
+                ],
+                "correctAnswer": "10",
+                "remediationId": "number-matrices"
+            },
+            {
+                "id": "q19",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "Which transformation of f(x) represents a reflection across the x-axis followed by a vertical shift up 3 units?",
+                "options": [
+                    "-f(x) + 3",
+                    "f(-x) + 3",
+                    "-f(x + 3)",
+                    "-f(x) - 3"
+                ],
+                "correctAnswer": "-f(x) + 3",
+                "remediationId": "geometry-transformations"
+            },
+            {
+                "id": "q20",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "In a circle, a chord of length 16 is 6 units from the center. What is the radius of the circle?",
+                "options": [
+                    "10",
+                    "8",
+                    "12",
+                    "14"
+                ],
+                "correctAnswer": "10",
+                "remediationId": "geometry-circles"
+            },
+            {
+                "id": "q21",
+                "domain": "Number & Quantity",
+                "questionType": "Multiple Choice",
+                "prompt": "Rationalize the denominator: 5 / √10.",
+                "options": [
+                    "√2.5",
+                    "2.5",
+                    "√5",
+                    "√10 / 5"
+                ],
+                "correctAnswer": "√2.5",
+                "remediationId": "number-radicals"
+            },
+            {
+                "id": "q22",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the equation of a line perpendicular to y = (3/2)x - 5 that passes through (4, 1)?",
+                "options": [
+                    "y = -(2/3)x + 11/3",
+                    "y = -(2/3)x + 7",
+                    "y = (2/3)x - 5",
+                    "y = -(3/2)x + 7"
+                ],
+                "correctAnswer": "y = -(2/3)x + 11/3",
+                "remediationId": "geometry-parallel-lines"
+            },
+            {
+                "id": "q23",
+                "domain": "Number & Quantity",
+                "questionType": "Numeric Entry",
+                "prompt": "If vector u = <5, -2> and v = <1, 6>, find the y-component of u + v.",
+                "correctAnswer": "4",
+                "remediationId": "number-vectors"
+            },
+            {
+                "id": "q24",
+                "domain": "Geometry",
+                "questionType": "Multiple Choice",
+                "prompt": "A triangle has sides of 7, 24, and 25. What type of triangle is it?",
+                "options": [
+                    "Right",
+                    "Acute",
+                    "Obtuse",
+                    "Isosceles"
+                ],
+                "correctAnswer": "Right",
+                "remediationId": "geometry-similarity"
+            },
+            {
+                "id": "q25",
+                "domain": "Number & Quantity",
+                "questionType": "Multiple Choice",
+                "prompt": "Convert the repeating decimal 0.777... to a fraction.",
+                "options": [
+                    "7/9",
+                    "7/10",
+                    "2/3",
+                    "77/100"
+                ],
+                "correctAnswer": "7/9",
+                "remediationId": "number-rational-exponents"
+            },
+            {
+                "id": "q26",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the remainder when P(x) = 2x³ - 5x² + x + 7 is divided by (x - 2)?",
+                "options": [
+                    "5",
+                    "7",
+                    "1",
+                    "11"
+                ],
+                "correctAnswer": "5",
+                "remediationId": "algebra-remainder-theorem"
+            },
+            {
+                "id": "q27",
+                "domain": "Statistics & Probability",
+                "questionType": "Multiple Choice",
+                "prompt": "In a normal distribution, approximately what percentage of data falls between 1 and 2 standard deviations above the mean?",
+                "options": [
+                    "13.5%",
+                    "34%",
+                    "2.5%",
+                    "68%"
+                ],
+                "correctAnswer": "13.5%",
+                "remediationId": "stats-empirical"
+            },
+            {
+                "id": "q28",
+                "domain": "Algebra",
+                "questionType": "Numeric Entry",
+                "prompt": "Solve for x: x² - 10x + 25 = 0.",
+                "correctAnswer": "5",
+                "remediationId": "algebra-polynomials"
+            },
+            {
+                "id": "q29",
+                "domain": "Statistics & Probability",
+                "questionType": "Multiple Choice",
+                "prompt": "A fair coin is tossed 3 times. What is the probability of getting exactly 2 heads?",
+                "options": [
+                    "3/8",
+                    "1/2",
+                    "1/4",
+                    "3/4"
+                ],
+                "correctAnswer": "3/8",
+                "remediationId": "stats-probability-dependent"
+            },
+            {
+                "id": "q30",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "Rewrite the expression in vertex form by completing the square: f(x) = x² + 6x + 2.",
+                "options": [
+                    "(x + 3)² - 7",
+                    "(x + 3)² + 2",
+                    "(x + 6)² - 34",
+                    "(x + 3)² + 11"
+                ],
+                "correctAnswer": "(x + 3)² - 7",
+                "remediationId": "algebra-completing-square"
+            },
+            {
+                "id": "q31",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "If 2x - 3y = 7 and x + y = 1, what is the value of x?",
+                "options": [
+                    "2",
+                    "1",
+                    "-1",
+                    "3"
+                ],
+                "correctAnswer": "2",
+                "remediationId": "algebra-systems"
+            },
+            {
+                "id": "q32",
+                "domain": "Statistics & Probability",
+                "questionType": "Multiple Choice",
+                "prompt": "Which measure of central tendency is most resistant to extreme outliers?",
+                "options": [
+                    "Median",
+                    "Mean",
+                    "Mode",
+                    "Range"
+                ],
+                "correctAnswer": "Median",
+                "remediationId": "stats-outliers"
+            },
+            {
+                "id": "q33",
+                "domain": "Algebra",
+                "questionType": "Numeric Entry",
+                "prompt": "Find the value of the discriminant for the quadratic 3x² - 4x + 2 = 0.",
+                "correctAnswer": "-8",
+                "remediationId": "algebra-complex-roots"
+            },
+            {
+                "id": "q34",
+                "domain": "Statistics & Probability",
+                "questionType": "Multiple Choice",
+                "prompt": "If the probability of event A is 0.4 and the probability of event B is 0.5, and they are independent, what is P(A and B)?",
+                "options": [
+                    "0.2",
+                    "0.9",
+                    "0.1",
+                    "0.25"
+                ],
+                "correctAnswer": "0.2",
+                "remediationId": "stats-probability-dependent"
+            },
+            {
+                "id": "q35",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "Solve the inequality: 5 - 2x < 11.",
+                "options": [
+                    "x > -3",
+                    "x < -3",
+                    "x > 3",
+                    "x < 3"
+                ],
+                "correctAnswer": "x > -3",
+                "remediationId": "algebra-inequalities"
+            },
+            {
+                "id": "q36",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "Which of the following is a solution to the system y = x² - 4x + 3 and y = x - 1?",
+                "options": [
+                    "(1, 0)",
+                    "(4, 3)",
+                    "(0, 3)",
+                    "(2, 1)"
+                ],
+                "correctAnswer": "(1, 0)",
+                "remediationId": "algebra-nonlinear-systems"
+            },
+            {
+                "id": "q37",
+                "domain": "Statistics & Probability",
+                "questionType": "Numeric Entry",
+                "prompt": "A bag has 4 blue and 6 green marbles. Two are pulled without replacement. What is the probability (as a decimal) they are both blue?",
+                "correctAnswer": "0.133",
+                "remediationId": "stats-probability-dependent"
+            },
+            {
+                "id": "q38",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "Solve for L in the formula for the perimeter of a rectangle: P = 2L + 2W.",
+                "options": [
+                    "L = (P - 2W)/2",
+                    "L = P - W",
+                    "L = (P + 2W)/2",
+                    "L = 2P - 2W"
+                ],
+                "correctAnswer": "L = (P - 2W)/2",
+                "remediationId": "algebra-literal-equations"
+            },
+            {
+                "id": "q39",
+                "domain": "Statistics & Probability",
+                "questionType": "Multiple Choice",
+                "prompt": "A survey of \"the first 20 people who walk into a gym\" is an example of what kind of sampling?",
+                "options": [
+                    "Convenience",
+                    "Random",
+                    "Stratified",
+                    "Systematic"
+                ],
+                "correctAnswer": "Convenience",
+                "remediationId": "stats-bias"
+            },
+            {
+                "id": "q40",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "Find the average rate of change of f(x) = x² + x on the interval [1, 3].",
+                "options": [
+                    "5",
+                    "4",
+                    "6",
+                    "3"
+                ],
+                "correctAnswer": "5",
+                "remediationId": "algebra-average-rate"
+            },
+            {
+                "id": "q41",
+                "domain": "Statistics & Probability",
+                "questionType": "Numeric Entry",
+                "prompt": "In a game, you win $10 with probability 0.3 and lose $2 with probability 0.7. What is the expected value?",
+                "correctAnswer": "1.60",
+                "remediationId": "stats-expected-value"
+            },
+            {
+                "id": "q42",
+                "domain": "Algebra",
+                "questionType": "Multiple Choice",
+                "prompt": "Simplify (3 + 2i)(3 - 2i).",
+                "options": [
+                    "13",
+                    "5",
+                    "9 - 4i",
+                    "13 + 12i"
+                ],
+                "correctAnswer": "13",
+                "remediationId": "algebra-complex-roots"
+            },
+            {
+                "id": "q43",
+                "domain": "Statistics & Probability",
+                "questionType": "Multiple Choice",
+                "prompt": "If the variance of a dataset is 25, what is the standard deviation?",
+                "options": [
+                    "5",
+                    "25",
+                    "12.5",
+                    "625"
+                ],
+                "correctAnswer": "5",
+                "remediationId": "stats-empirical"
+            },
+            {
+                "id": "q44",
+                "domain": "Algebra",
+                "questionType": "Numeric Entry",
+                "prompt": "Find the zero of the linear function f(x) = 4x - 12.",
+                "correctAnswer": "3",
+                "remediationId": "algebra-polynomials"
+            },
+            {
+                "id": "q45",
+                "domain": "Statistics & Probability",
+                "questionType": "Multiple Choice",
+                "prompt": "If P(A) = 0.65, what is the probability of the complement, P(Aᶜ)?",
+                "options": [
+                    "0.35",
+                    "0.65",
+                    "1.00",
+                    "0.45"
+                ],
+                "correctAnswer": "0.35",
+                "remediationId": "stats-complement"
+            },
+            {
+                "id": "q46",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the domain of f(x) = √(x - 2) / (x - 4)?",
+                "options": [
+                    "[2, 4) ∪ (4, ∞)",
+                    "[2, ∞)",
+                    "(4, ∞)",
+                    "(-∞, 2] ∪ [4, ∞)"
+                ],
+                "correctAnswer": "[2, 4) ∪ (4, ∞)",
+                "remediationId": "functions-domain"
+            },
+            {
+                "id": "q47",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Evaluate the definite integral: ∫₁³ (3x² + 1) dx.",
+                "options": [
+                    "28",
+                    "26",
+                    "30",
+                    "24"
+                ],
+                "correctAnswer": "28",
+                "remediationId": "calculus-integrals"
+            },
+            {
+                "id": "q48",
+                "domain": "Functions & Calculus",
+                "questionType": "Numeric Entry",
+                "prompt": "If f(x) = 2x + 3 and g(x) = x², find the value of f(g(2)).",
+                "correctAnswer": "11",
+                "remediationId": "functions-composition"
+            },
+            {
+                "id": "q49",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Find the derivative f'(x) for the function f(x) = ln(x² + 1).",
+                "options": [
+                    "2x / (x² + 1)",
+                    "1 / (x² + 1)",
+                    "2x / x²",
+                    "x / (x² + 1)"
+                ],
+                "correctAnswer": "2x / (x² + 1)",
+                "remediationId": "calculus-derivatives"
+            },
+            {
+                "id": "q50",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the horizontal asymptote of f(x) = (3x² - 5) / (x² + 2)?",
+                "options": [
+                    "y = 3",
+                    "y = 1",
+                    "y = 0",
+                    "y = -5/2"
+                ],
+                "correctAnswer": "y = 3",
+                "remediationId": "functions-rational"
+            },
+            {
+                "id": "q51",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Find dy/dx for the circle defined by x² + y² = 100.",
+                "options": [
+                    "-x/y",
+                    "-y/x",
+                    "x/y",
+                    "y/x"
+                ],
+                "correctAnswer": "-x/y",
+                "remediationId": "calculus-implicit"
+            },
+            {
+                "id": "q52",
+                "domain": "Functions & Calculus",
+                "questionType": "Numeric Entry",
+                "prompt": "Find the 6th term of the geometric sequence where a₁ = 5 and r = 2.",
+                "correctAnswer": "160",
+                "remediationId": "functions-sequences"
+            },
+            {
+                "id": "q53",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Find the absolute maximum of f(x) = -x² + 4x on the interval [0, 4].",
+                "options": [
+                    "4",
+                    "2",
+                    "0",
+                    "8"
+                ],
+                "correctAnswer": "4",
+                "remediationId": "calculus-optimization"
+            },
+            {
+                "id": "q54",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the period of the function f(x) = 3cos(4x)?",
+                "options": [
+                    "π/2",
+                    "2π",
+                    "π",
+                    "4π"
+                ],
+                "correctAnswer": "π/2",
+                "remediationId": "functions-trigonometry"
+            },
+            {
+                "id": "q55",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Find the area between y = x² and y = 4 from x = -2 to x = 2.",
+                "options": [
+                    "32/3",
+                    "16/3",
+                    "8",
+                    "12"
+                ],
+                "correctAnswer": "32/3",
+                "remediationId": "calculus-area-curves"
+            },
+            {
+                "id": "q56",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "The function f(x) = x³ + x is classified as:",
+                "options": [
+                    "Odd",
+                    "Even",
+                    "Neither",
+                    "Both"
+                ],
+                "correctAnswer": "Odd",
+                "remediationId": "functions-symmetry"
+            },
+            {
+                "id": "q57",
+                "domain": "Functions & Calculus",
+                "questionType": "Numeric Entry",
+                "prompt": "Evaluate the limit: lim(x→5) (x² - 25) / (x - 5).",
+                "correctAnswer": "10",
+                "remediationId": "calculus-limits"
+            },
+            {
+                "id": "q58",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Shift f(x) = x² left 2 units and up 5 units.",
+                "options": [
+                    "(x + 2)² + 5",
+                    "(x - 2)² + 5",
+                    "(x + 2)² - 5",
+                    "(x - 2)² - 5"
+                ],
+                "correctAnswer": "(x + 2)² + 5",
+                "remediationId": "functions-transformations"
+            },
+            {
+                "id": "q59",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the derivative of f(x) = sin(3x)?",
+                "options": [
+                    "3cos(3x)",
+                    "cos(3x)",
+                    "-3cos(3x)",
+                    "3sin(3x)"
+                ],
+                "correctAnswer": "3cos(3x)",
+                "remediationId": "calculus-derivatives"
+            },
+            {
+                "id": "q60",
+                "domain": "Functions & Calculus",
+                "questionType": "Numeric Entry",
+                "prompt": "If f(x) = 4x - 1, find the value of f⁻¹(7).",
+                "correctAnswer": "2",
+                "remediationId": "functions-inverses"
+            },
+            {
+                "id": "q61",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "What is the antiderivative of f(x) = sin(x)?",
+                "options": [
+                    "-cos(x) + C",
+                    "cos(x) + C",
+                    "-sin(x) + C",
+                    "sin(x) + C"
+                ],
+                "correctAnswer": "-cos(x) + C",
+                "remediationId": "calculus-integrals"
+            },
+            {
+                "id": "q62",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Solve for x: 2^(x+1) = 16.",
+                "options": [
+                    "3",
+                    "4",
+                    "5",
+                    "2"
+                ],
+                "correctAnswer": "3",
+                "remediationId": "functions-exponential"
+            },
+            {
+                "id": "q63",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Find the slope of the tangent to y = x³ at the point (2, 8).",
+                "options": [
+                    "12",
+                    "8",
+                    "6",
+                    "4"
+                ],
+                "correctAnswer": "12",
+                "remediationId": "calculus-derivatives"
+            },
+            {
+                "id": "q64",
+                "domain": "Functions & Calculus",
+                "questionType": "Numeric Entry",
+                "prompt": "Evaluate f(2) for the piecewise function f(x) = {x + 1, x < 2; 2x, x ≥ 2}.",
+                "correctAnswer": "4",
+                "remediationId": "functions-piecewise"
+            },
+            {
+                "id": "q65",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Use the product rule to find the derivative of f(x) = x*eˣ.",
+                "options": [
+                    "eˣ(x + 1)",
+                    "eˣ",
+                    "xeˣ",
+                    "eˣ(x - 1)"
+                ],
+                "correctAnswer": "eˣ(x + 1)",
+                "remediationId": "calculus-derivatives"
+            },
+            {
+                "id": "q66",
+                "domain": "Functions & Calculus",
+                "questionType": "Multiple Choice",
+                "prompt": "Condense the expression: 3log(x) - log(y).",
+                "options": [
+                    "log(x³/y)",
+                    "log(3x/y)",
+                    "log(x³y)",
+                    "log(x/y³)"
+                ],
+                "correctAnswer": "log(x³/y)",
+                "remediationId": "functions-logarithms"
+            }
+        ]
+    }
+]

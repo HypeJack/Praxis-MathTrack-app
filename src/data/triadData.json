@@ -1,0 +1,3142 @@
+[
+    {
+        "id": "slope",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Linear Models & Rate of Change",
+        "closingNarrative": "The human need to measure steepness dates back to ancient Egyptian builders who calculated the 'seked' to ensure pyramids wouldn't collapse. But it was René Descartes in the 1600s who bridged geometry and algebra, allowing us to graph a line on a coordinate plane and calculate its exact rate of change. Today, slope is the engine of prediction—from civil engineers determining the safe grade of a mountain highway to data scientists modeling climate trends. You aren't just teaching a formula; you are teaching your students how to measure the speed of a changing world.",
+        "artifact": "A line passes through the points (2, 5) and (6, 13).",
+        "computation": {
+            "partA": {
+                "label": "Part A: Calculate the slope.",
+                "correctAnswer": 2
+            },
+            "partB": {
+                "label": "Part B: Line Behavior.",
+                "options": ["Select an option...", "Goes up from left to right", "Goes down from left to right", "Is a horizontal line"],
+                "correctAnswer": "Goes up from left to right"
+            },
+            "partC": {
+                "label": "Part C: Equation.",
+                "input1Label": "m (slope):",
+                "input1Correct": 2,
+                "input2Label": "b (y-intercept):",
+                "input2Correct": 1
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "How much does the y-value grow for every step x takes? (This maintains the concept spine of 'rate of change' while grounding the geometric abstraction in movement)."
+        },
+        "literacyB": {
+            "studentWork": "The slope is 8/4 = 2. The equation is y = 2x.",
+            "studentExplanation": "I found the slope by doing 13 minus 5 which is 8, and 6 minus 2 which is 4, so the slope is 2. Then I just wrote y = 2x because slope is the number in front of x.",
+            "feedbackExcellent": "Excellent diagnosis. You correctly identified that the student has mastered the mechanics of the slope formula (rise over run) but is missing the y-intercept calculation. By assuming the line passes through the origin (y=2x), they missed applying the point (2, 5) or (6, 13) to find 'b'. Your proposed response effectively guides them to test their equation.",
+            "feedbackImprovement": "You missed one or more key elements. Review the student's work again. Did they truly miss the slope calculation, or did they stop too early? Remember how linear equations require both steepness and a starting point.",
+            "dropdown1": {
+                "options": ["Select...", "Slope formula (rise/run)", "The y-intercept is 0", "How to plot points"],
+                "correct": "Slope formula (rise/run)"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Missing the y-intercept calculation", "Calculated slope incorrectly", "Swapped x and y"],
+                "correct": "Missing the y-intercept calculation"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Where does the line cross the y-axis?", "Ask: Did you subtract correctly?", "Ask: Can you draw a right triangle?"],
+                "correct": "Ask: Where does the line cross the y-axis?"
+            }
+        }
+    },
+    {
+        "id": "slope-alt",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Linear Models & Rate of Change",
+        "closingNarrative": "The story of rate of change is the story of modern mathematics. From the first proportional relationships in middle school to the complex differentials of calculus, mastery of slope is the master key. By grounding these calculations in movement and stories, you ensure your students aren't just following rules—they are building intuition.",
+        "artifact": "A line passes through the points (1, 8) and (5, 0).",
+        "computation": {
+            "partA": {
+                "label": "Part A: Calculate the slope.",
+                "correctAnswer": -2
+            },
+            "partB": {
+                "label": "Part B: Line Behavior.",
+                "options": ["Select an option...", "Goes up from left to right", "Goes down from left to right", "Is a horizontal line"],
+                "correctAnswer": "Goes down from left to right"
+            },
+            "partC": {
+                "label": "Part C: Equation.",
+                "input1Label": "m (slope):",
+                "input1Correct": -2,
+                "input2Label": "b (y-intercept):",
+                "input2Correct": 10
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "How much does the y-value grow for every step x takes? (This maintains the concept spine of 'rate of change' while grounding the geometric abstraction in movement)."
+        },
+        "literacyB": {
+            "studentWork": "The slope is 4 / -8 = -0.5. The equation is y = -0.5x + 8.5.",
+            "studentExplanation": "I did 5 minus 1 to get 4 for the top, and 0 minus 8 to get -8 for the bottom. So 4 divided by -8 is -0.5.",
+            "feedbackExcellent": "Excellent work. You noticed the student calculated 'run over rise' instead of 'rise over run'. They correctly identified the start of a linear equation but their baseline was flawed from the first step.",
+            "feedbackImprovement": "Check the student's division again. They got -0.5, but is that change in y over change in x? Look at which numbers were subtracted and in what order.",
+            "dropdown1": {
+                "options": ["Select...", "How to find the difference between points", "The y-intercept formula", "How to plot points"],
+                "correct": "How to find the difference between points"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Swapped the x and y values (Run over Rise)", "Subtracted incorrectly", "Forgot the negative sign"],
+                "correct": "Swapped the x and y values (Run over Rise)"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Which axis represents the 'rise'?", "Ask: Can you re-add the numbers?", "Ask: Where does it cross the y-axis?"],
+                "correct": "Ask: Which axis represents the 'rise'?"
+            }
+        }
+    },
+    {
+        "id": "geometry-similarity",
+        "domain": "Geometry",
+        "conceptTopic": "Similarity & Area Ratios",
+        "closingNarrative": "Similarity is the bridge between different scales of reality. Whether we are zooming in on a microscopic structure or mapping a galaxy, the rules of dimensional scaling—how lengths, areas, and volumes explode with a change in scale—governs the architecture of the universe.",
+        "artifact": "Triangle ABC has side lengths 3, 4, and 5. It is dilated by a scale factor of k to form Triangle DEF. The area of Triangle DEF is 54 square units.",
+        "conceptNarrative": "When we scale a figure, our intuition often plays tricks on us. Length is one-dimensional; area is two-dimensional. If you stretch a shape's width by k and its height by k, the space inside multiplies by k squared.",
+        "arcZoomOut": {
+            "before": "Grade 7: Scale Drawings.",
+            "concept": "Similarity & Area Ratios.",
+            "after": "Calculus: Integration & Transformations."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the scale factor (k)?",
+                "correctAnswer": 3
+            },
+            "partB": {
+                "label": "Part B: How does the dilation affect the angle measures?",
+                "options": ["Select an option...", "They are multiplied by 3", "They remain congruent", "They are reduced by 1/3"],
+                "correctAnswer": "They remain congruent"
+            },
+            "partC": {
+                "label": "Part C: What are the lengths of the two shortest sides of Triangle DEF?",
+                "input1Label": "Shortest Side:",
+                "input1Correct": 9,
+                "input2Label": "Middle Side:",
+                "input2Correct": 12
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Since area is two-dimensional, it grows by the square of the scale factor. If the area grows by 9 (54 / 6), the linear scale factor is 3."
+        },
+        "literacyB": {
+            "studentWork": "The area of the first triangle is 6. The area of the second is 54. 54 / 6 = 9. So the scale factor is 9.",
+            "studentExplanation": "I multiplied all the sides by 9 to get the new side lengths.",
+            "dropdown1": {
+                "options": ["Select...", "How to find the area of the original triangle", "The relationship between side lengths and perimeter"],
+                "correct": "How to find the area of the original triangle"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They assumed scale factor applies directly to area instead of squaring it", "They calculated the initial area incorrectly"],
+                "correct": "They assumed scale factor applies directly to area instead of squaring it"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: What happens to the area of a 1x1 square if you multiply its sides by 3?", "Ask: Can you recount the area?"],
+                "correct": "Ask: What happens to the area of a 1x1 square if you multiply its sides by 3?"
+            }
+        }
+    },
+    {
+        "id": "geometry-trigonometry",
+        "domain": "Geometry",
+        "conceptTopic": "Right Triangle Trigonometry",
+        "closingNarrative": "Trigonometry is the study of locked-in ratios. By connecting it back to similarity, you ensure students don't view trig functions as magic buttons on a calculator.",
+        "artifact": "A 15-foot ladder is leaning against a vertical wall. The base of the ladder is 9 feet from the wall.",
+        "conceptNarrative": "Trigonometry is simply the study of proportionality. Because all right triangles with the same acute angle are similar, the ratios of their sides are locked in.",
+        "arcZoomOut": {
+            "before": "Geometry: Similarity.",
+            "concept": "Right Triangle Trigonometry.",
+            "after": "Pre-Calculus: Circular Functions."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the height reaching up the wall?",
+                "correctAnswer": 12
+            },
+            "partB": {
+                "label": "Part B: Identify the cosine ratio of the angle of elevation.",
+                "options": ["Select an option...", "9/15", "12/15", "9/12", "12/9"],
+                "correctAnswer": "9/15"
+            },
+            "partC": {
+                "label": "Part C: Value of sine and tangent.",
+                "input1Label": "Sine:",
+                "input1Correct": 0.8,
+                "input2Label": "Tangent:",
+                "input2Correct": 1.33
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Cosine is Adjacent / Hypotenuse. Here, adjacent is 9 and hypotenuse is 15, so 9/15 or 0.6."
+        },
+        "literacyB": {
+            "studentWork": "The height is 6. The cosine is 12/9.",
+            "studentExplanation": "I subtracted 9 from 15 to get 6. Then I used SOH CAH TOA.",
+            "dropdown1": {
+                "options": ["Select...", "Pythagorean Theorem", "Definition of Cosine"],
+                "correct": "Pythagorean Theorem"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Used subtraction instead of squares", "Swapped Hypotenuse and Adjacent"],
+                "correct": "Used subtraction instead of squares"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Does a^2 + b^2 = c^2 work here?", "Ask: Is cosine adjacent or opposite?"],
+                "correct": "Ask: Does a^2 + b^2 = c^2 work here?"
+            }
+        }
+    },
+    {
+        "id": "geometry-circles",
+        "domain": "Geometry",
+        "conceptTopic": "Arc Length & Sector Area",
+        "closingNarrative": "Circles are the perfection of proportional thinking. By mastering arc length and sector area, students transition from linear thinking to angular thinking.",
+        "artifact": "A circle has a radius of 12 units. Find the length of an arc and the area of a sector intercepted by a 60-degree central angle.",
+        "conceptNarrative": "Arc length and sector area are just fractions of the whole circle. If you know the whole circumference or area, you just need to know what 'slice' you have.",
+        "arcZoomOut": {
+            "before": "Grade 7: Circles.",
+            "concept": "Arc Length & Sector Area.",
+            "after": "Calculus: Polar Coordinates."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What fraction of the circle is represented by a 60-degree angle?",
+                "options": ["Select an option...", "1/4", "1/6", "1/8", "1/60"],
+                "correctAnswer": "1/6"
+            },
+            "partB": {
+                "label": "Part B: What is the arc length? (Enter coefficient of pi)",
+                "correctAnswer": 4
+            },
+            "partC": {
+                "label": "Part C: Area of the sector and confirmation.",
+                "input1Label": "Sector Area (pi coeff):",
+                "input1Correct": 24,
+                "input2Label": "Confirm Area:",
+                "input2Correct": 24
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "60/360 = 1/6. Circumference is 24pi, so arc length is 1/6 * 24pi = 4pi. Area is 144pi, so sector area is 1/6 * 144pi = 24pi."
+        },
+        "literacyB": {
+            "studentWork": "Arc length = 60 * 12 = 720.",
+            "studentExplanation": "I multiplied the angle by the radius.",
+            "dropdown1": {
+                "options": ["Select...", "Fraction of circumference", "Radian measure intuition"],
+                "correct": "Fraction of circumference"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Forgot to divide by 360 and multiply by 2pi", "Used radius instead of diameter"],
+                "correct": "Forgot to divide by 360 and multiply by 2pi"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Is 720 units longer than the whole circle?", "Ask: What is 60/360?"],
+                "correct": "Ask: Is 720 units longer than the whole circle?"
+            }
+        }
+    },
+    {
+        "id": "geometry-transformations",
+        "domain": "Geometry",
+        "conceptTopic": "Rigid Transformations",
+        "closingNarrative": "Geometry is a language of motion. Every reflection, rotation, and translation is a story about how space can be rearranged without losing its essence.",
+        "artifact": "Triangle ABC has vertices A(1, 2), B(3, 5), and C(4, 1). It is reflected across the line y = x to form Triangle A'B'C'.",
+        "conceptNarrative": "Transformations are the bridge between geometry and algebra. Reflecting across y = x swaps the domain and range.",
+        "arcZoomOut": {
+            "before": "Grade 8: Rigid Motions.",
+            "concept": "Coordinate Transformations.",
+            "after": "Functions: Inverses."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Rule for y = x?",
+                "options": ["Select an option...", "(x, y) -> (-x, y)", "(x, y) -> (x, -y)", "(x, y) -> (y, x)"],
+                "correctAnswer": "(x, y) -> (y, x)"
+            },
+            "partB": {
+                "label": "Part B: x-coordinate of A'?",
+                "correctAnswer": 2
+            },
+            "partC": {
+                "label": "Part C: Coordinates of B'?",
+                "input1Label": "B' x:",
+                "input1Correct": 5,
+                "input2Label": "B' y:",
+                "input2Correct": 3
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "(x, y) -> (y, x). A(1, 2) -> A'(2, 1), B(3, 5) -> B'(5, 3), C(4, 1) -> C'(1, 4)."
+        },
+        "literacyB": {
+            "studentWork": "A' = (-1, -2).",
+            "studentExplanation": "I made them negative.",
+            "dropdown1": {
+                "options": ["Select...", "Rotation 180", "Reflection y-axis"],
+                "correct": "Rotation 180"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Applied origin reflection instead of y=x", "Swapped incorrectly"],
+                "correct": "Applied origin reflection instead of y=x"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Can you fold the paper along y=x?", "Ask: What is (y, x)?"],
+                "correct": "Ask: Can you fold the paper along y=x?"
+            }
+        }
+    },
+    {
+        "id": "geometry-partitioning",
+        "domain": "Geometry",
+        "conceptTopic": "Partitioning a Line Segment",
+        "closingNarrative": "Partitioning is the geometric foundation of weighted averages and parametric growth.",
+        "artifact": "Find the point on the directed line segment from P(-2, 4) to Q(8, -1) that partitions the segment in a 2:3 ratio.",
+        "conceptNarrative": "A 2:3 ratio means the segment is cut into 5 equal parts! This maps a discrete ratio to a continuous distance.",
+        "arcZoomOut": {
+            "before": "Grade 6: Ratios.",
+            "concept": "Coordinate Geometry Partitioning.",
+            "after": "Calculus: Parametric Equations."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Total parts?",
+                "correctAnswer": 5
+            },
+            "partB": {
+                "label": "Part B: Fraction from P to Q?",
+                "options": ["Select an option...", "2/3", "2/5", "3/5"],
+                "correctAnswer": "2/5"
+            },
+            "partC": {
+                "label": "Part C: Coordinates?",
+                "input1Label": "x:",
+                "input1Correct": 2,
+                "input2Label": "y:",
+                "input2Correct": 2
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Move 2/5 of the distance. dx=10, dy=-5. x = -2 + 4 = 2, y = 4 - 2 = 2."
+        },
+        "literacyB": {
+            "studentWork": "x = -2 + (2/3)(10) = 4.67.",
+            "studentExplanation": "I used 2/3.",
+            "dropdown1": {
+                "options": ["Select...", "Horizontal/Vertical distance", "Midpoint"],
+                "correct": "Horizontal/Vertical distance"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Used part-to-part as part-to-whole", "Wrong direction"],
+                "correct": "Used part-to-part as part-to-whole"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: If recipe has 2 sugar 3 flour, how many total cups?", "Ask: What is 2/(2+3)?"],
+                "correct": "Ask: If recipe has 2 sugar 3 flour, how many total cups?"
+            }
+        }
+    },
+    {
+        "id": "geometry-lines-angles",
+        "domain": "Geometry",
+        "conceptTopic": "Lines & Angle Relationships",
+        "closingNarrative": "Angle relationships describe the architecture of symmetry. Parallel lines reveal repeating acute and obtuse patterns.",
+        "artifact": "Two parallel lines intersected by transversal. obtuse = 3x+20, consecutive interior = 2x-10.",
+        "conceptNarrative": "Consecutive interior angles are supplementary. Recognition of these patterns bypasses rote memorization.",
+        "arcZoomOut": {
+            "before": "Grade 7: Angle Facts.",
+            "concept": "Parallel Lines & Transversals.",
+            "after": "Geometry: Proofs."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Congruent or supplementary?",
+                "options": ["Select an option...", "Congruent", "Supplementary"],
+                "correctAnswer": "Supplementary"
+            },
+            "partB": {
+                "label": "Part B: Equation?",
+                "options": ["Select an option...", "3x+20 = 2x-10", "(3x+20)+(2x-10)=180"],
+                "correctAnswer": "(3x+20)+(2x-10)=180"
+            },
+            "partC": {
+                "label": "Part C: x and acute angle?",
+                "input1Label": "x:",
+                "input1Correct": 34,
+                "input2Label": "Acute Angle:",
+                "input2Correct": 58
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "3x+20+2x-10=180 -> 5x+10=180 -> x=34. Acute angle is 2(34)-10=58."
+        },
+        "literacyB": {
+            "studentWork": "3x+20 = 2x-10.",
+            "studentExplanation": "Parallel lines make them same.",
+            "dropdown1": {
+                "options": ["Select...", "Algebraic solving", "Angle facts"],
+                "correct": "Algebraic solving"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Assumed congruent instead of supplementary", "Calculation error"],
+                "correct": "Assumed congruent instead of supplementary"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Do they look the same size?", "Ask: Are all angles equal?"],
+                "correct": "Ask: Do they look the same size?"
+            }
+        }
+    },
+    {
+        "id": "geometry-solids",
+        "domain": "Geometry",
+        "conceptTopic": "Volume & Cross Sections",
+        "closingNarrative": "Transitioning from 2D to 3D requires holding multiple perspectives. Slicing reveals structural DNA.",
+        "artifact": "Cone: r=6, h=8. Parallel plane slice.",
+        "conceptNarrative": "Volume is about infinite stacks of 2D shapes. Parallel slices are similar to the base.",
+        "arcZoomOut": {
+            "before": "Grade 7: 2D Area.",
+            "concept": "3D Solids.",
+            "after": "Calculus: Volumes of Revolution."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Shape of cross-section?",
+                "options": ["Select an option...", "Triangle", "Circle"],
+                "correctAnswer": "Circle"
+            },
+            "partB": {
+                "label": "Part B: Base Area (coeff of pi)?",
+                "correctAnswer": 36
+            },
+            "partC": {
+                "label": "Part C: Volume (coeff of pi)?",
+                "input1Label": "Volume:",
+                "input1Correct": 96,
+                "input2Label": "Confirm:",
+                "input2Correct": 96
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Base = 36pi. Vol = 1/3 * 36pi * 8 = 96pi."
+        },
+        "literacyB": {
+            "studentWork": "Vol = 288pi. Triangle.",
+            "studentExplanation": "Cylinder formula.",
+            "dropdown1": {
+                "options": ["Select...", "Area * Height", "Slant height"],
+                "correct": "Area * Height"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Forgot 1/3 and confused slice direction", "Calculation error"],
+                "correct": "Forgot 1/3 and confused slice direction"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Slice ice cream cone top?", "Ask: What is 1/3 correct?"],
+                "correct": "Ask: Slice ice cream cone top?"
+            }
+        }
+    },
+    {
+        "id": "geometry-polygons",
+        "domain": "Geometry",
+        "conceptTopic": "Properties of Parallelograms",
+        "closingNarrative": "Quadrilateral attributes build a hierarchy. Diagonals provide the structural key.",
+        "artifact": "Parallelogram ABCD, diagonals intersect at E. AE=3x-5, EC=x+7.",
+        "conceptNarrative": "Diagonals of a parallelogram bisect each other, making segments congruent.",
+        "arcZoomOut": {
+            "before": "Grade 5: Classifying Shapes.",
+            "concept": "Parallelograms.",
+            "after": "Physics: Vectors."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: AE vs EC?",
+                "options": ["Select an option...", "Congruent", "Perpendicular"],
+                "correctAnswer": "Congruent"
+            },
+            "partB": {
+                "label": "Part B: x?",
+                "correctAnswer": 6
+            },
+            "partC": {
+                "label": "Part C: AE and AC?",
+                "input1Label": "AE:",
+                "input1Correct": 13,
+                "input2Label": "AC:",
+                "input2Correct": 26
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "3x-5 = x+7 -> 2x=12 -> x=6. AE=13, AC=26."
+        },
+        "literacyB": {
+            "studentWork": "3x-5 + x+7 = 180.",
+            "studentExplanation": "Straight line.",
+            "dropdown1": {
+                "options": ["Select...", "Supplementary definition", "Like terms"],
+                "correct": "Supplementary definition"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Confused length with angle", "Algebra error"],
+                "correct": "Confused length with angle"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Distance in degrees?", "Ask: Add x's correctly?"],
+                "correct": "Ask: Distance in degrees?"
+            }
+        }
+    },
+    {
+        "id": "geometry-proofs",
+        "domain": "Geometry",
+        "conceptTopic": "Logical Fallacies in Proofs",
+        "closingNarrative": "Proof is about earned sentences. SSA fails because of the ambiguous case.",
+        "artifact": "Student uses SSA for triangle congruence. Valid?",
+        "conceptNarrative": "Proof requires avoiding fallacies like SSA, which creates non-unique cases.",
+        "arcZoomOut": {
+            "before": "Grade 8: Informal Arguments.",
+            "concept": "Triangle Congruence.",
+            "after": "College Geometry: Logic."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: SSA valid?",
+                "options": ["Select an option...", "Yes", "No"],
+                "correctAnswer": "No"
+            },
+            "partB": {
+                "label": "Part B: Valid theorem?",
+                "options": ["Select an option...", "SSA", "SAS"],
+                "correctAnswer": "SAS"
+            },
+            "partC": {
+                "label": "Part C: Special SSA case? (1 for HL)",
+                "input1Label": "Number:",
+                "input1Correct": 1,
+                "input2Label": "Confirm:",
+                "input2Correct": 1
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "SSA is invalid; HL (at 90 deg) is the only exception."
+        },
+        "literacyB": {
+            "studentWork": "SSA works.",
+            "studentExplanation": "3 parts match.",
+            "dropdown1": {
+                "options": ["Select...", "3 pieces needed", "Triangle parts"],
+                "correct": "3 pieces needed"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Assumed any 3 pieces guarantee identity", "Fallacy"],
+                "correct": "Assumed any 3 pieces guarantee identity"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Draw 2 different ones with 5, 8, 30deg?", "Ask: What is SAS?"],
+                "correct": "Ask: Draw 2 different ones with 5, 8, 30deg?"
+            }
+        }
+    },
+    {
+        "id": "geometry-perimeter-area",
+        "domain": "Geometry",
+        "conceptTopic": "Area by Decomposition",
+        "closingNarrative": "Decomposition turns complex shapes into solvable simple ones.",
+        "artifact": "Regular hexagon, radius 10. Perimeter and Area?",
+        "conceptNarrative": "Hexagons are six equilateral triangles. Radius = side length.",
+        "arcZoomOut": {
+            "before": "Grade 6: Decomposition.",
+            "concept": "Regular Polygons.",
+            "after": "Calculus: Riemann Sums."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: How many triangles?",
+                "correctAnswer": 6
+            },
+            "partB": {
+                "label": "Part B: Perimeter?",
+                "correctAnswer": 60
+            },
+            "partC": {
+                "label": "Part C: Area coeff of sqrt(3)?",
+                "input1Label": "Coeff:",
+                "input1Correct": 150,
+                "input2Label": "Confirm:",
+                "input2Correct": 150
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "6 triangles, side 10. Perim = 60. Area = 6 * (1/2 * 10 * 5sqrt(3)) = 150sqrt(3)."
+        },
+        "literacyB": {
+            "studentWork": "Area = 1/2 * 10 * 60 = 300.",
+            "studentExplanation": "Used radius as apothem.",
+            "dropdown1": {
+                "options": ["Select...", "Perimeter calculation", "Polygon formula"],
+                "correct": "Perimeter calculation"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Confused radius with apothem", "Calculation error"],
+                "correct": "Confused radius with apothem"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Radius to corner or flat side?", "Ask: What is apothem?"],
+                "correct": "Ask: Radius to corner or flat side?"
+            }
+        }
+    },
+    {
+        "id": "algebra-systems",
+        "domain": "Algebra",
+        "conceptTopic": "Systems of Linear Equations",
+        "closingNarrative": "A system of equations isn't just a set of rules for moving variables around; it is a search for intersection. When we ask students to solve a system, we are asking them: 'At what exact moment do these two different stories share the exact same reality?' Whether using substitution or elimination, the goal is to collapse two dimensions down to one so the truth can be revealed.",
+        "artifact": "Solve the following system of equations algebraically: Equation 1: 2x + 3y = 12. Equation 2: x - y = 1.",
+        "conceptNarrative": "A system is a search for intersection. Collapsing two dimensions into one allows us to find the point where two lines meet.",
+        "arcZoomOut": {
+            "before": "Grade 8: Introduction to Systems. Points of intersection correspond to solutions.",
+            "concept": "Algebra I: Solving Systems algebraically and graphically.",
+            "after": "Linear Algebra: Matrices and vector spaces."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the value of x?",
+                "correctAnswer": 3
+            },
+            "partB": {
+                "label": "Part B: What is the value of y?",
+                "correctAnswer": 2
+            },
+            "partC": {
+                "label": "Part C: What does this solution (3, 2) represent on a coordinate plane?",
+                "options": ["Select an option...", "The x-intercepts", "The point of intersection", "The slope"],
+                "correctAnswer": "The point of intersection"
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "From x - y = 1, x = y + 1. Substitute into 2x + 3y = 12: 2(y + 1) + 3y = 12 -> 2y + 2 + 3y = 12 -> 5y = 10 -> y = 2. Then x = 2 + 1 = 3."
+        },
+        "literacyB": {
+            "studentWork": "From Eq 2, x = y + 1. Substitute into Eq 1: 2(y + 1) + 3y = 12. 2y + 1 + 3y = 12. 5y + 1 = 12. 5y = 11. y = 2.2.",
+            "studentExplanation": "I used substitution. I got x by itself and plugged it in.",
+            "dropdown1": {
+                "options": ["Select...", "How to isolate a variable", "How to graph"],
+                "correct": "How to isolate a variable"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They failed to distribute the 2", "They substituted into the wrong equation"],
+                "correct": "They failed to distribute the 2"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: What is 2 * (y + 1)?", "Ask: Can you try elimination?"],
+                "correct": "Ask: What is 2 * (y + 1)?"
+            }
+        }
+    },
+    {
+        "id": "algebra-polynomials",
+        "domain": "Algebra",
+        "conceptTopic": "Zeros of Polynomials",
+        "closingNarrative": "Finding the zeros of a polynomial is the algebraic equivalent of finding where a rollercoaster touches the ground. The Zero Product Property is the hero here.",
+        "artifact": "Find all the real zeros of the polynomial function f(x) = x^3 - 2x^2 - 8x.",
+        "conceptNarrative": "Factoring breaks a complex curve into linear pieces that reveal where the graph crosses the x-axis.",
+        "arcZoomOut": {
+            "before": "Algebra I: Factoring Quadratics.",
+            "concept": "Algebra II: Polynomial Zeros.",
+            "after": "Calculus: Curve Sketching."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the greatest common factor?",
+                "options": ["Select an option...", "2", "x", "x^2"],
+                "correctAnswer": "x"
+            },
+            "partB": {
+                "label": "Part B: What are the three zeros? (Enter the positive zero here)",
+                "correctAnswer": 4
+            },
+            "partC": {
+                "label": "Part C: Enter the remaining two zeros:",
+                "input1Label": "Zero 2:",
+                "input1Correct": 0,
+                "input2Label": "Zero 3 (Negative):",
+                "input2Correct": -2
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "f(x) = x(x^2 - 2x - 8) = x(x - 4)(x + 2). Setting each factor to zero gives x = 0, x = 4, and x = -2."
+        },
+        "literacyB": {
+            "studentWork": "f(x) = x(x^2 - 2x - 8) = x(x - 4)(x + 2). The zeros are x = 4 and x = -2.",
+            "studentExplanation": "I factored out the x and then the quadratic. The zeros are opposite signs.",
+            "dropdown1": {
+                "options": ["Select...", "How to factor a quadratic", "How to find y-intercept"],
+                "correct": "How to factor a quadratic"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They forgot the x=0 zero", "They flipped signs incorrectly"],
+                "correct": "They forgot the x=0 zero"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: If x = 0, what is f(x)?", "Ask: What is the degree?"],
+                "correct": "Ask: If x = 0, what is f(x)?"
+            }
+        }
+    },
+    {
+        "id": "algebra-rational-equations",
+        "domain": "Algebra",
+        "conceptTopic": "Extraneous Solutions",
+        "closingNarrative": "Finding an answer is only step one; verifying that the answer exists in the reality of the original equation is the true mathematical finish line. When we clear denominators, we transform the equation's DNA, and we must be vigilant about the ghost solutions left behind.",
+        "artifact": "Solve for x: x / (x - 2) = 2 / (x - 2) + 5",
+        "conceptNarrative": "When we clear denominators by multiplying by the LCM, we hand students a powerful bulldozer. But transforming a rational equation into a linear one can lose domain restrictions. Mastery requires verifying every solution against the original 'reality' of the equation.",
+        "arcZoomOut": {
+            "before": "Grade 7: Proportional Relationships. Solving proportions assuming valid real numbers.",
+            "concept": "Rational Equations. Solving with variables in the denominator and identifying extraneous solutions.",
+            "after": "Calculus: Limits. Understanding domain restrictions and vertical asymptotes."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What value of x is restricted from the domain of this equation?",
+                "correctAnswer": 2
+            },
+            "partB": {
+                "label": "Part B: If you multiply the entire equation by (x - 2) and solve for x, what number do you get?",
+                "correctAnswer": 2
+            },
+            "partC": {
+                "label": "Part C: Because the calculated answer is the restricted value, what is the final solution set?",
+                "options": [
+                    "Select an option...",
+                    "x = 2",
+                    "x = 0",
+                    "No Solution (Empty Set)",
+                    "All Real Numbers"
+                ],
+                "correctAnswer": "No Solution (Empty Set)"
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Multiplying by (x-2) gives x = 2 + 5(x-2). x = 2 + 5x - 10 -> x = 5x - 8 -> -4x = -8 -> x = 2. However, plugging x = 2 into the original equation causes division by zero. Therefore, x = 2 is extraneous, and there is no solution."
+        },
+        "literacyB": {
+            "studentWork": "Multiply by (x-2): x = 2 + 5(x-2). x = 2 + 5x - 10. x = 5x - 8. -4x = -8. x = 2. The answer is 2.",
+            "studentExplanation": "I multiplied everything by x-2 to get rid of the fractions. Then I distributed the 5, combined like terms, and solved for x to get 2.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "How to clear denominators in a rational equation",
+                    "How to find the least common denominator"
+                ],
+                "correct": "How to clear denominators in a rational equation"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They distributed the 5 incorrectly",
+                    "They forgot to check if their final answer was an extraneous solution"
+                ],
+                "correct": "They forgot to check if their final answer was an extraneous solution"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Can you plug x = 2 back into the very first equation? What happens to the denominator?",
+                    "Ask: Did you subtract 5x correctly?"
+                ],
+                "correct": "Ask: Can you plug x = 2 back into the very first equation? What happens to the denominator?"
+            }
+        }
+    },
+    {
+        "id": "algebra-completing-square",
+        "domain": "Algebra",
+        "conceptTopic": "Completing the Square",
+        "closingNarrative": "Completing the square is performing an algebraic illusion—adding a strategically chosen zero to transform the visible structure while maintaining the inner value. This reveals the vertex, the turnaround point where the function's story changes direction.",
+        "artifact": "Rewrite the quadratic function f(x) = x^2 - 8x + 5 in vertex form: f(x) = (x - h)^2 + k.",
+        "conceptNarrative": "We are adding a strategically chosen zero. If we add 16 to create a perfect square trinomial, we must immediately subtract 16 to keep the equation balanced. Equivalence is the key.",
+        "arcZoomOut": {
+            "before": "Algebra I: Perfect Square Trinomials. Expanding (x - 4)^2 into x^2 - 8x + 16.",
+            "concept": "Completing the Square. Adding and subtracting a value to transform into vertex form.",
+            "after": "Geometry: Equations of Circles. Using completing the square to find center and radius."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What 'magic number' must you add to x^2 - 8x to create a perfect square trinomial?",
+                "correctAnswer": 16
+            },
+            "partB": {
+                "label": "Part B: If you add 16 inside the group, what must you do on the outside to keep the function balanced?",
+                "options": [
+                    "Select an option...",
+                    "Add 16",
+                    "Subtract 16",
+                    "Multiply by 16",
+                    "Divide by 16"
+                ],
+                "correctAnswer": "Subtract 16"
+            },
+            "partC": {
+                "label": "Part C: What are the coordinates of the vertex? (h, k)",
+                "input1Label": "h (x-coordinate):",
+                "input1Correct": 4,
+                "input2Label": "k (y-coordinate):",
+                "input2Correct": -11
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "f(x) = (x^2 - 8x + 16) + 5 - 16. f(x) = (x - 4)^2 - 11. The vertex is (4, -11)."
+        },
+        "literacyB": {
+            "studentWork": "f(x) = (x^2 - 8x + 16) + 5. f(x) = (x - 4)^2 + 5. The vertex is (4, 5).",
+            "studentExplanation": "I added 16 to complete the square inside the parentheses. The + 5 just stays on the outside.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "How to calculate the value needed to complete the square",
+                    "How to find the y-intercept"
+                ],
+                "correct": "How to calculate the value needed to complete the square"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They added 16 without subtracting 16 to maintain equality",
+                    "They factored the trinomial incorrectly"
+                ],
+                "correct": "They added 16 without subtracting 16 to maintain equality"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If you just add 16, is it still the same equation? How can you balance it out?",
+                    "Ask: What is -4 times -4?"
+                ],
+                "correct": "Ask: If you just add 16, is it still the same equation? How can you balance it out?"
+            }
+        }
+    },
+    {
+        "id": "algebra-inequalities",
+        "domain": "Algebra",
+        "conceptTopic": "Systems of Inequalities",
+        "closingNarrative": "Inequalities shift our mathematical thinking from finding 'the answer' to finding a 'region of possibility.' Graphing these constraints helps us understand the exact boundary where real-world logic—like the impossibility of baking negative cookies—interacts with mathematical theory.",
+        "artifact": "A baker is making batches of cookies (x) and brownies (y). They can make no more than 10 batches total. Cookies require 2 cups of sugar, brownies require 3. They have at most 24 cups of sugar.",
+        "conceptNarrative": "Word problems with inequalities define 'feasible regions.' The real-world constraints—like x >= 0 and y >= 0—are just as significant as the slope of the boundary line.",
+        "arcZoomOut": {
+            "before": "Grade 6: Number Line Inequalities.",
+            "concept": "Systems of Inequalities. Graphing feasible regions and interpreting real-world solutions.",
+            "after": "Linear Programming. Maximizing profit and minimizing cost using regions of possibility."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Inequality for total batches?",
+                "options": ["Select an option...", "x + y >= 10", "x + y <= 10"],
+                "correctAnswer": "x + y <= 10"
+            },
+            "partB": {
+                "label": "Part B: Inequality for sugar?",
+                "options": ["Select an option...", "2x + 3y <= 24", "3x + 2y <= 24"],
+                "correctAnswer": "2x + 3y <= 24"
+            },
+            "partC": {
+                "label": "Part C: Is (4, 5) viable? (1 for Yes, 0 for No)",
+                "input1Label": "Viable?",
+                "input1Correct": 1,
+                "input2Label": "Confirm:",
+                "input2Correct": 1
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Eq 1: x + y <= 10. Eq 2: 2x + 3y <= 24. For (4, 5): 4 + 5 = 9 (<= 10) is true. 2(4) + 3(5) = 8 + 15 = 23 (<= 24) is true. Both hold, so it's a viable solution."
+        },
+        "literacyB": {
+            "studentWork": "The point (-2, 9) works because -2+9=7 and -4+27=23. Since it works in the math, it's a solution.",
+            "studentExplanation": "I found a point that makes both equations true. It's a solution.",
+            "dropdown1": {
+                "options": ["Select...", "Real-world models restrict domain to x >= 0", "Substitution into inequalities"],
+                "correct": "Real-world models restrict domain to x >= 0"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Accepted a negative value for a physical object", "Sugar calculation error"],
+                "correct": "Accepted a negative value for a physical object"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Can you physically bake negative cookies?", "Ask: What is 3 * 9?"],
+                "correct": "Ask: Can you physically bake negative cookies?"
+            }
+        }
+    },
+    {
+        "id": "algebra-complex-roots",
+        "domain": "Algebra",
+        "conceptTopic": "Complex Solutions",
+        "closingNarrative": "When the discriminant drops below zero, the quadratic formula doesn't break; it simply invites us onto the complex plane. Complex roots remind us that mathematics is not just a study of real numbers, but a canvas that expands to meet the logic of any curve.",
+        "artifact": "Solve the quadratic equation using the quadratic formula: x^2 - 4x + 13 = 0.",
+        "conceptNarrative": "When the discriminant is negative, we use 'i' to navigate a perpendicular axis. The quadratic formula remains our guide as the number system expands.",
+        "arcZoomOut": {
+            "before": "Algebra I: The Discriminant.",
+            "concept": "Complex Roots. Solving equations yielding solutions of form a +/- bi.",
+            "after": "Pre-Calculus: Fundamental Theorem of Algebra."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Value of discriminant (b^2 - 4ac)?",
+                "correctAnswer": -36
+            },
+            "partB": {
+                "label": "Part B: What does sqrt(-36) simplify to?",
+                "options": ["Select an option...", "6", "6i", "-6i"],
+                "correctAnswer": "6i"
+            },
+            "partC": {
+                "label": "Part C: Roots (a +/- bi). Enter a and b:",
+                "input1Label": "a (Real Part):",
+                "input1Correct": 2,
+                "input2Label": "b (Imaginary Coefficient):",
+                "input2Correct": 3
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "a=1, b=-4, c=13. Discriminant = (-4)^2 - 4(1)(13) = 16 - 52 = -36. x = (4 +/- sqrt(-36)) / 2 = (4 +/- 6i) / 2 = 2 +/- 3i. a=2, b=3."
+        },
+        "literacyB": {
+            "studentWork": "x = (4 +/- 6i) / 2. x = 4 +/- 3i.",
+            "studentExplanation": "I divided the 6i by 2 to get 3i.",
+            "dropdown1": {
+                "options": ["Select...", "Fraction bar grouping both terms", "Simplifying radicals"],
+                "correct": "Fraction bar grouping both terms"
+            },
+            "dropdown2": {
+                "options": ["Select...", "Divided imaginary part but forgot to divide real part", "+/- sign error"],
+                "correct": "Divided imaginary part but forgot to divide real part"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: When you divide a polynomial by a monomial, do you divide every piece?", "Ask: What is 4 / 2?"],
+                "correct": "Ask: When you divide a polynomial by a monomial, do you divide every piece?"
+            }
+        }
+    },
+    {
+        "id": "algebra-nonlinear-systems",
+        "domain": "Algebra",
+        "conceptTopic": "Linear & Quadratic Systems",
+        "closingNarrative": "A solution to a 2D system must be a coordinate pair. Finding x is only half the battle; anchoring the algebra back to the geometry of the intersection points is what completes the mathematical picture.",
+        "artifact": "Solve the system of equations algebraically: y = x^2 - 4 and y = 2x - 1.",
+        "conceptNarrative": "When a line intersects a parabola, setting them equal creates a temporary quadratic equation. Finding both x-values and their corresponding y-values reveals the geometry of intersection.",
+        "arcZoomOut": {
+            "before": "Algebra I: Linear Systems. Finding intersection between two lines.",
+            "concept": "Non-linear Systems. Solving systems of linear and quadratic equations algebraically and graphically.",
+            "after": "Calculus: Area Between Curves. Finding intersection points to set limits of integration."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: When you set the equations equal (x^2 - 4 = 2x - 1) and set to zero, what is the new constant term?",
+                "correctAnswer": -3
+            },
+            "partB": {
+                "label": "Part B: Factoring x^2 - 2x - 3 = 0 yields x = 3 and x = -1. If x = 3, what is the y-coordinate?",
+                "correctAnswer": 5
+            },
+            "partC": {
+                "label": "Part C: What is the second coordinate pair solution? (Enter x and y)",
+                "input1Label": "x-coordinate:",
+                "input1Correct": -1,
+                "input2Label": "y-coordinate:",
+                "input2Correct": -3
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "x^2 - 4 = 2x - 1 -> x^2 - 2x - 3 = 0 -> (x-3)(x+1) = 0. x=3 gives y = 2(3)-1 = 5. x=-1 gives y = 2(-1)-1 = -3. Points: (3, 5) and (-1, -3)."
+        },
+        "literacyB": {
+            "studentWork": "x^2 - 2x - 3 = 0. (x - 3)(x + 1) = 0. So x = 3 and x = -1. The intersection points are (3, 0) and (-1, 0).",
+            "studentExplanation": "I set them equal and factored. The solutions are 3 and -1, which are the x-intercepts.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "That a solution to a system is a coordinate pair (x,y)",
+                    "How to factor a trinomial"
+                ],
+                "correct": "That a solution to a system is a coordinate pair (x,y)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They assumed y=0 instead of plugging x back in",
+                    "They factored the quadratic incorrectly"
+                ],
+                "correct": "They assumed y=0 instead of plugging x back in"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If x = 3, what does the linear equation y = 2x - 1 equal?",
+                    "Ask: What is 3 times -1?"
+                ],
+                "correct": "Ask: If x = 3, what does the linear equation y = 2x - 1 equal?"
+            }
+        }
+    },
+    {
+        "id": "algebra-literal-equations",
+        "domain": "Algebra",
+        "conceptTopic": "Rearranging Formulas",
+        "closingNarrative": "Literal equations are the ultimate test of structural understanding. Trusting the laws of equality and inverse operations allows students to move beyond arithmetic into true algebraic manipulation.",
+        "artifact": "The formula for converting Celsius to Fahrenheit is F = (9/5)C + 32. Rearrange to solve for C.",
+        "conceptNarrative": "Rearranging formulas requires applying operations to the entire side of an equation. Trusting inverse operations is essential when numbers aren't there to simplify the process.",
+        "arcZoomOut": {
+            "before": "Grade 7: Two-Step Equations.",
+            "concept": "Literal Equations. Rearranging multi-variable formulas for a specified variable.",
+            "after": "Calculus: Related Rates. Rearranging geometric formulas before differentiating with respect to time."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To isolate the term with C, what is the first inverse operation?",
+                "options": [
+                    "Select an option...",
+                    "Subtract 32 from both sides",
+                    "Multiply by 5/9"
+                ],
+                "correctAnswer": "Subtract 32 from both sides"
+            },
+            "partB": {
+                "label": "Part B: After subtracting 32, what is the reciprocal fraction you multiply by?",
+                "options": [
+                    "Select an option...",
+                    "5/9",
+                    "9/5"
+                ],
+                "correctAnswer": "5/9"
+            },
+            "partC": {
+                "label": "Part C: Using C = (5/9)(F - 32), find C when F is 68.",
+                "input1Label": "Degrees Celsius:",
+                "input1Correct": 20,
+                "input2Label": "Confirm:",
+                "input2Correct": 20
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "F - 32 = (9/5)C. Multiply both sides by 5/9: (5/9)(F - 32) = C. C = (5/9)(F - 32). For F=68, C = (5/9)(36) = 20."
+        },
+        "literacyB": {
+            "studentWork": "F - 32 = 9/5 C. Multiply by 5/9. C = 5/9 F - 32.",
+            "studentExplanation": "I subtracted 32, then multiplied the other side by 5/9.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "How to apply inverse operations to an entire side",
+                    "How to find the reciprocal"
+                ],
+                "correct": "How to apply inverse operations to an entire side"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They failed to distribute the 5/9 to the -32",
+                    "They multiplied by the wrong reciprocal"
+                ],
+                "correct": "They failed to distribute the 5/9 to the -32"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: When you multiply the right side by 5/9, do you multiply just the F or the whole left side?",
+                    "Ask: What is 5/9 times 32?"
+                ],
+                "correct": "Ask: When you multiply the right side by 5/9, do you multiply just the F or the whole left side?"
+            }
+        }
+    },
+    {
+        "id": "algebra-average-rate",
+        "domain": "Algebra",
+        "conceptTopic": "Average Rate of Change",
+        "closingNarrative": "Average rate of change bridges the gap between the static slopes of Algebra I and the instantaneous derivatives of Calculus. When students calculate the average rate of change of a curve, they are finding the slope of a secant line connecting two points. We must teach them that a rate is not just a change, but a change relative to an interval.",
+        "artifact": "Find the average rate of change of the quadratic function f(x) = -2x^2 + 4x + 6 over the interval [-1, 2].",
+        "conceptNarrative": "Calculating the slope of a secant line between two points on a nonlinear function reveals the average rate of change. A common pitfall is finding the total change in y but forgetting to divide by the interval width (change in x).",
+        "arcZoomOut": {
+            "before": "Algebra I: Slope of a Line. Calculating constant rate of change (m) between any two points.",
+            "concept": "Average Rate of Change. Calculating the slope of a secant line between two points over a specific interval.",
+            "after": "Calculus: The Derivative. As the interval shrinks to zero, the secant becomes a tangent line."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Evaluate the function at the start of the interval. What is f(-1)?",
+                "correctAnswer": 0
+            },
+            "partB": {
+                "label": "Part B: Evaluate the function at the end of the interval. What is f(2)?",
+                "correctAnswer": 6
+            },
+            "partC": {
+                "label": "Part C: Divide the change in y by the change in x. What is the average rate of change?",
+                "input1Label": "Rate:",
+                "input1Correct": 2,
+                "input2Label": "Confirm Rate:",
+                "input2Correct": 2
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "f(2) = -2(2)^2 + 4(2) + 6 = -8 + 8 + 6 = 6. f(-1) = -2(-1)^2 + 4(-1) + 6 = -2 - 4 + 6 = 0. ARC = (f(2) - f(-1)) / (2 - (-1)) = (6 - 0) / 3 = 2."
+        },
+        "literacyB": {
+            "studentWork": "f(2) = -2(4) + 8 + 6 = 6. f(-1) = -2(1) - 4 + 6 = 0. 6 - 0 = 6. The average rate of change is 6.",
+            "studentExplanation": "I plugged the ends of the interval into the function to find the y-values. Then I subtracted them to find how much the function changed.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The slope formula (change in y divided by change in x)",
+                    "How to evaluate a quadratic function"
+                ],
+                "correct": "The slope formula (change in y divided by change in x)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They found the total change in y but forgot to divide by the change in x",
+                    "They evaluated f(-1) incorrectly"
+                ],
+                "correct": "They found the total change in y but forgot to divide by the change in x"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: How wide is the interval on the x-axis from -1 to 2?",
+                    "Ask: What is 6 minus 0?"
+                ],
+                "correct": "Ask: How wide is the interval on the x-axis from -1 to 2?"
+            }
+        }
+    },
+    {
+        "id": "algebra-remainder-theorem",
+        "domain": "Algebra",
+        "conceptTopic": "The Remainder Theorem",
+        "closingNarrative": "The Remainder Theorem is a beautiful algebraic shortcut. Instead of slogging through polynomial long division, we can simply evaluate the function. Mastery requires understanding that we are evaluating at the root (c), not the factor (x-c).",
+        "artifact": "Use the Remainder Theorem to find the remainder when the polynomial P(x) = x^3 - 4x^2 + 2x + 5 is divided by (x - 3).",
+        "conceptNarrative": "Instead of polynomial long division, evaluate the function at the root. Sign-error traps are common; students must plug in the root 'c' from the factor (x - c).",
+        "arcZoomOut": {
+            "before": "Algebra I: Evaluating Expressions. Substituting numerical values.",
+            "concept": "The Remainder Theorem. Remainder of P(x) / (x - c) is equal to P(c).",
+            "after": "Algebra II: The Factor Theorem. If P(c) = 0, then (x - c) is a factor."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: According to the Remainder Theorem, if dividing by (x - 3), what value should you plug in for x?",
+                "correctAnswer": 3
+            },
+            "partB": {
+                "label": "Part B: What is the value of the first term (3^3)?",
+                "correctAnswer": 27
+            },
+            "partC": {
+                "label": "Part C: Evaluate P(3) to find the final remainder.",
+                "input1Label": "Remainder:",
+                "input1Correct": 2,
+                "input2Label": "Confirm:",
+                "input2Correct": 2
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Plug in x = 3: P(3) = (3)^3 - 4(3)^2 + 2(3) + 5 = 27 - 4(9) + 6 + 5 = 27 - 36 + 11 = -9 + 11 = 2."
+        },
+        "literacyB": {
+            "studentWork": "P(-3) = (-3)^3 - 4(-3)^2 + 2(-3) + 5. P(-3) = -27 - 36 - 6 + 5 = -64. The remainder is -64.",
+            "studentExplanation": "I used the Remainder Theorem. Since we are dividing by x - 3, I plugged -3 into all the x spots and simplified the math.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The relationship between a factor (x - c) and its root (c)",
+                    "How to perform polynomial long division"
+                ],
+                "correct": "The relationship between a factor (x - c) and its root (c)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They evaluated P(-3) instead of P(3)",
+                    "They calculated (-3)^3 incorrectly"
+                ],
+                "correct": "They evaluated P(-3) instead of P(3)"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If the factor is (x - 3), what x-value makes that factor equal to zero?",
+                    "Ask: Can you try synthetic division instead?"
+                ],
+                "correct": "Ask: If the factor is (x - 3), what x-value makes that factor equal to zero?"
+            }
+        }
+    },
+    {
+        "id": "functions-transformations",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Function Transformations",
+        "closingNarrative": "Horizontal function transformations are one of the great counter-intuitive hurdles in algebra. Moving left feels like it should be subtraction, and moving right feels like addition. But horizontal shifts happen *inside* the function's argument, acting directly on the domain before the function processes it. If we want the zero to happen at x = -3, we need an input of (x + 3). Teaching this requires breaking the illusion that the inside of the parentheses works the same as the outside.",
+        "artifact": "Given the parent quadratic function f(x) = x^2, write the equation of the new function g(x) after it is translated 3 units to the left and 4 units down.",
+        "conceptNarrative": "Horizontal shifts occur inside the function argument and are counter-intuitive: f(x+h) moves left and f(x-h) moves right. Vertical shifts occur outside the function.",
+        "arcZoomOut": {
+            "before": "Algebra I: Vertex Form. Identifying (h, k) in y = a(x-h)^2 + k.",
+            "concept": "Function Transformations. Describing how g(x) relates to f(x) using f(x)+k and f(x+k).",
+            "after": "Calculus: Integration. Essential for shifting limits of integration during u-substitution."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To shift the graph 3 units to the left, what should be inside the parentheses?",
+                "options": ["Select an option...", "(x - 3)", "(x + 3)", "(3x)", "(-3x)"],
+                "correctAnswer": "(x + 3)"
+            },
+            "partB": {
+                "label": "Part B: To shift the graph 4 units down, what is the value of k appended to the outside?",
+                "correctAnswer": -4
+            },
+            "partC": {
+                "label": "Part C: What are the coordinates of the new vertex? (Enter x and y)",
+                "input1Label": "x-coordinate:",
+                "input1Correct": -3,
+                "input2Label": "y-coordinate:",
+                "input2Correct": -4
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "g(x) = (x + 3)^2 - 4. Moving left replaces x with (x + 3), and moving down appends -4 to the output."
+        },
+        "literacyB": {
+            "studentWork": "g(x) = (x - 3)^2 - 4. The vertex is at (3, -4).",
+            "studentExplanation": "Left is negative on the number line, so I put minus 3 inside the parentheses. Down is also negative, so I put minus 4 on the outside.",
+            "dropdown1": {
+                "options": ["Select...", "The rule for horizontal shifts: f(x - h)", "How to calculate the y-intercept"],
+                "correct": "The rule for horizontal shifts: f(x - h)"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They confused the direction of the horizontal shift inside the argument", "They shifted the graph up instead of down"],
+                "correct": "They confused the direction of the horizontal shift inside the argument"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: If you plug x = 3 into your equation, does the inside of the parentheses equal zero?", "Ask: Did you remember the negative 4?"],
+                "correct": "Ask: If you plug x = 3 into your equation, does the inside of the parentheses equal zero?"
+            }
+        }
+    },
+    {
+        "id": "functions-composition",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Evaluating Compositions",
+        "closingNarrative": "Function composition is the mathematical equivalent of an assembly line. The output of the first machine becomes the raw material for the second. Teaching composition means enforcing a strict 'inside-out' order of operations, ensuring students don't confuse nesting with multiplying.",
+        "artifact": "Let f(x) = 2x - 5 and g(x) = x^2 + 1. Find the exact value of the composite function f(g(3)).",
+        "conceptNarrative": "Function composition is about nesting: the output of one function becomes the input of another. Always work from the inside out to avoid confusion.",
+        "arcZoomOut": {
+            "before": "Grade 8: Evaluating Functions. Evaluating linear functions for a given numerical input.",
+            "concept": "Function Composition. Evaluating and building composite functions from tables, graphs, and expressions.",
+            "after": "Calculus: The Chain Rule. Composition is the foundation for differentiating nested functions."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Working inside-out, what is the value of the inner function, g(3)?",
+                "correctAnswer": 10
+            },
+            "partB": {
+                "label": "Part B: What value must you now plug into the outer function, f(x)?",
+                "correctAnswer": 10
+            },
+            "partC": {
+                "label": "Part C: Evaluate f(10). What is the final exact value? (Enter the value in both boxes)",
+                "input1Label": "Final Value:",
+                "input1Correct": 15,
+                "input2Label": "Confirm Value:",
+                "input2Correct": 15
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "g(3) = (3)^2 + 1 = 10. f(g(3)) = f(10) = 2(10) - 5 = 15."
+        },
+        "literacyB": {
+            "studentWork": "f(3) = 2(3) - 5 = 1. g(3) = (3)^2 + 1 = 10. f(g(3)) = 1 * 10 = 10.",
+            "studentExplanation": "I found the value of f(3) and the value of g(3), and then I multiplied them together because they are next to each other.",
+            "dropdown1": {
+                "options": ["Select...", "That evaluating nested functions requires working from the inside out", "How to multiply two numbers"],
+                "correct": "That evaluating nested functions requires working from the inside out"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They treated composition notation f(g(x)) as multiplication", "They evaluated the functions in the wrong order"],
+                "correct": "They treated composition notation f(g(x)) as multiplication"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Does the notation f(g(3)) mean f times g, or f 'of' g?",
+                    "Ask: Did you remember to subtract 5?"
+                ],
+                "correct": "Ask: Does the notation f(g(3)) mean f times g, or f 'of' g?"
+            }
+        }
+    },
+    {
+        "id": "functions-inverses",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Inverse Functions",
+        "closingNarrative": "The notation for inverse functions is a classic pitfall. Anchoring the concept in the act of swapping domain and range—rather than following exponent rules—helps students distinguish between a function that 'undoes' an operation and a numerical reciprocal.",
+        "artifact": "Find the inverse function, f^-1(x), for the linear function f(x) = 3x - 6. Then evaluate f^-1(9).",
+        "conceptNarrative": "Finding an inverse involves swapping x and y and solving for the new y. The notation f^-1(x) is a label for the inverse, not a negative exponent.",
+        "arcZoomOut": {
+            "before": "Algebra I: Solving for y. Rearranging literal equations to isolate a variable.",
+            "concept": "Inverse Functions. Swapping the roles of x and y to find a function that 'undoes' the original.",
+            "after": "Calculus: Derivatives of Inverses. Using geometric symmetry to calculate derivatives of inverse functions."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To find the inverse, swap x and y (x = 3y - 6). What do you do first to solve for y?",
+                "options": [
+                    "Select an option...",
+                    "Add 6 to both sides",
+                    "Divide by 3"
+                ],
+                "correctAnswer": "Add 6 to both sides"
+            },
+            "partB": {
+                "label": "Part B: What is the simplified equation for the inverse function?",
+                "options": [
+                    "Select an option...",
+                    "y = (x + 6) / 3",
+                    "y = 1/(3x - 6)",
+                    "y = 3x + 6"
+                ],
+                "correctAnswer": "y = (x + 6) / 3"
+            },
+            "partC": {
+                "label": "Part C: Evaluate the inverse function at x = 9.",
+                "input1Label": "f^-1(9):",
+                "input1Correct": 5,
+                "input2Label": "Confirm:",
+                "input2Correct": 5
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "x = 3y - 6 -> x + 6 = 3y -> y = (x + 6) / 3. f^-1(9) = (9 + 6) / 3 = 15 / 3 = 5."
+        },
+        "literacyB": {
+            "studentWork": "f^-1(x) = 1 / (3x - 6). So f^-1(9) = 1 / (27 - 6) = 1/21.",
+            "studentExplanation": "The negative 1 exponent means you take the reciprocal. So I just put the whole function under a 1.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "How to swap domain and range",
+                    "The rule for negative integer exponents"
+                ],
+                "correct": "How to swap domain and range"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They confused function inverse notation with the rule for negative exponents",
+                    "They subtracted 6 incorrectly"
+                ],
+                "correct": "They confused function inverse notation with the rule for negative exponents"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Does the -1 here mean an exponent, or is it just the label for an 'undo' function?",
+                    "Ask: What is 27 minus 6?"
+                ],
+                "correct": "Ask: Does the -1 here mean an exponent, or is it just the label for an 'undo' function?"
+            }
+        }
+    },
+    {
+        "id": "functions-exponential",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Exponential vs. Linear Growth",
+        "closingNarrative": "Exponential growth requires a cognitive shift from addition to multiplication. Doubling isn't just adding a constant amount; it's a multiplicative cascade that rapidly accelerates, distinguishing exponents from simple slopes.",
+        "artifact": "A culture of bacteria starts with 100 cells and doubles every hour. Write a function B(t) to model the population after t hours, and determine the population after 4 hours.",
+        "conceptNarrative": "Exponential growth models situasi that grow by equal factors over equal intervals, unlike linear growth which uses a constant additive rate.",
+        "arcZoomOut": {
+            "before": "Algebra I: Arithmetic Sequences. Situations growing by a constant additive rate.",
+            "concept": "Exponential Models. Constructing and evaluating functions that grow by equal factors.",
+            "after": "Differential Equations: Population Modeling. Basis for the logistic growth equation in biology and economics."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Because the population 'doubles', is the growth additive or multiplicative?",
+                "options": [
+                    "Select an option...",
+                    "Multiplicative",
+                    "Additive"
+                ],
+                "correctAnswer": "Multiplicative"
+            },
+            "partB": {
+                "label": "Part B: What is the correct function for this population?",
+                "options": [
+                    "Select an option...",
+                    "B(t) = 100(2)^t",
+                    "B(t) = 100 + 2t",
+                    "B(t) = 100(t)^2"
+                ],
+                "correctAnswer": "B(t) = 100(2)^t"
+            },
+            "partC": {
+                "label": "Part C: What is the population after 4 hours?",
+                "input1Label": "Population:",
+                "input1Correct": 1600,
+                "input2Label": "Confirm:",
+                "input2Correct": 1600
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Initial amount = 100, constant factor = 2. B(t) = 100(2)^t. B(4) = 100(2^4) = 100(16) = 1600 bacteria."
+        },
+        "literacyB": {
+            "studentWork": "B(t) = 100 + 100t. B(4) = 100 + 100(4) = 500 bacteria.",
+            "studentExplanation": "It starts with 100, and if it doubles, it adds another 100 every hour. So I multiplied 100 by the 4 hours and added the starting amount.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The difference between adding a constant rate and multiplying by a constant factor",
+                    "How to use the y-intercept in a linear equation"
+                ],
+                "correct": "The difference between adding a constant rate and multiplying by a constant factor"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They assumed doubling meant adding the initial amount repeatedly (additive) instead of multiplying",
+                    "They calculated 100 times 4 incorrectly"
+                ],
+                "correct": "They assumed doubling meant adding the initial amount repeatedly (additive) instead of multiplying"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If it doubles every hour, what happens to the 200 bacteria in hour two?",
+                    "Ask: What is 100 times 4?"
+                ],
+                "correct": "Ask: If it doubles every hour, what happens to the 200 bacteria in hour two?"
+            }
+        }
+    },
+    {
+        "id": "functions-logarithms",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Solving Logarithmic Equations",
+        "closingNarrative": "Logarithms are essentially exponents in disguise. Mastering the product rule and remembering to check for extraneous solutions ensures students treat logs not as arbitrary rules, but as logical extensions of the number system.",
+        "artifact": "Solve the equation: log_3(x) + log_3(x - 8) = 2.",
+        "conceptNarrative": "When adding logarithms with the same base, multiply their arguments. Because the domain of a log function is strictly positive, they must check for extraneous solutions.",
+        "arcZoomOut": {
+            "before": "Algebra I: Exponent Rules. x^a * x^b = x^(a+b).",
+            "concept": "Properties of Logarithms. Applying the product, quotient, and power rules to solve equations.",
+            "after": "Calculus: Logarithmic Differentiation. Breaking down products and quotients before taking derivatives."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To combine the logs, you must multiply the arguments. What is x times (x - 8)?",
+                "options": [
+                    "Select an option...",
+                    "x^2 - 8x",
+                    "2x - 8",
+                    "x^2 - 8"
+                ],
+                "correctAnswer": "x^2 - 8x"
+            },
+            "partB": {
+                "label": "Part B: Convert log_3(x^2 - 8x) = 2 into an exponential equation. What does 3^2 equal?",
+                "correctAnswer": 9
+            },
+            "partC": {
+                "label": "Part C: Solving x^2 - 8x - 9 = 0 gives x = 9 and x = -1. Which is the ONLY valid solution?",
+                "input1Label": "Valid Solution:",
+                "input1Correct": 9,
+                "input2Label": "Confirm:",
+                "input2Correct": 9
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Combine logs: log_3(x(x-8)) = 2. Convert: 3^2 = x^2 - 8x -> 9 = x^2 - 8x -> x^2 - 8x - 9 = 0. Factor: (x-9)(x+1) = 0. Solutions: x=9, x=-1. Since log argument must be positive, x=9 is the only valid solution."
+        },
+        "literacyB": {
+            "studentWork": "log_3(x + x - 8) = 2. log_3(2x - 8) = 2. 3^2 = 2x - 8. 9 = 2x - 8. 17 = 2x. x = 8.5.",
+            "studentExplanation": "Since they are both log base 3, I just added the arguments together. Then I changed it to an exponent problem and solved.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The Product Property of Logarithms",
+                    "How to solve a quadratic equation"
+                ],
+                "correct": "The Product Property of Logarithms"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They added the arguments instead of multiplying them",
+                    "They calculated 3^2 incorrectly"
+                ],
+                "correct": "They added the arguments instead of multiplying them"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: When you add exponents together, what were you doing to their bases?",
+                    "Ask: Can you plug 8.5 back into the equation?"
+                ],
+                "correct": "Ask: When you add exponents together, what were you doing to their bases?"
+            }
+        }
+    },
+    {
+        "id": "functions-trigonometry",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Modeling Periodic Phenomena",
+        "closingNarrative": "Trigonometry comes alive when it moves. Modeling physical motion requires precise mapping of midline, amplitude, and frequency. Breaking the habit of plugging raw time directly into the period parameter is what separates rote calculation from true mathematical modeling.",
+        "artifact": "A Ferris wheel has a radius of 20 feet and its center is 25 feet above the ground. It completes one revolution every 10 seconds. Write a cosine function h(t) = A cos(Bt) + D starting from max height.",
+        "conceptNarrative": "Midline (D) is the center height. Amplitude (A) is the radius. The frequency parameter (B) is 2pi / Period.",
+        "arcZoomOut": {
+            "before": "Geometry: Circle Properties. Identifying radius, diameter, and center.",
+            "concept": "Periodic Models. Modeling periodic phenomena with amplitude, frequency, and midline.",
+            "after": "Physics: Simple Harmonic Motion. Modeling springs, pendulums, and alternating currents."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the midline (D) of the function? (The height of the center)",
+                "correctAnswer": 25
+            },
+            "partB": {
+                "label": "Part B: What is the amplitude (A) of the function? (The radius of the wheel)",
+                "correctAnswer": 20
+            },
+            "partC": {
+                "label": "Part C: Period is 10. To find B, calculate 2pi / 10. What is the simplified fraction coefficient for pi?",
+                "input1Label": "Numerator:",
+                "input1Correct": 1,
+                "input2Label": "Denominator:",
+                "input2Correct": 5
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "D = 25 (midline), A = 20 (radius). Period = 10, so B = 2pi / 10 = pi/5. Starting at max height means cosine is perfect. h(t) = 20 cos((pi/5)t) + 25."
+        },
+        "literacyB": {
+            "studentWork": "h(t) = 40 cos(10t) + 5",
+            "studentExplanation": "The wheel is 40 feet tall, so the amplitude is 40. The period is 10, so I put 10 next to the t. The lowest point is 5 feet off the ground, so that's the midline.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The definitions of amplitude, period multiplier, and midline",
+                    "How to evaluate a cosine function"
+                ],
+                "correct": "The definitions of amplitude, period multiplier, and midline"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They confused diameter with amplitude, lowest point with midline, and put the period into the equation",
+                    "They used sine instead of cosine"
+                ],
+                "correct": "They confused diameter with amplitude, lowest point with midline, and put the period into the equation"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Where is the exact center or 'middle' of this Ferris wheel?",
+                    "Ask: How long does it take to go around once?"
+                ],
+                "correct": "Ask: Where is the exact center or 'middle' of this Ferris wheel?"
+            }
+        }
+    },
+    {
+        "id": "calculus-limits",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Evaluating Limits",
+        "closingNarrative": "A limit is the study of a journey, not a destination. Recognizing 0/0 as an indeterminate form—a sign to 'keep digging'—allows students to move past algebraic dead ends and find the true value a function approaches.",
+        "artifact": "Evaluate the limit as x approaches 3 of the function: f(x) = (x^2 - 9) / (x - 3).",
+        "conceptNarrative": "Evaluating a limit at a point often requires algebraic simplification like factoring to resolve indeterminate forms (0/0).",
+        "arcZoomOut": {
+            "before": "Algebra II: Rational Functions. Identifying vertical asymptotes and holes in graphs.",
+            "concept": "Evaluating Limits. Calculating limits at a point and distinguishing them from actual function values.",
+            "after": "Calculus: Limit Definition of the Derivative. Using limits to calculate instantaneous rates of change."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What happens when you try direct substitution (plugging x = 3 directly into the fraction)?",
+                "options": [
+                    "Select an option...",
+                    "0",
+                    "0/0 (Indeterminate)",
+                    "Infinity"
+                ],
+                "correctAnswer": "0/0 (Indeterminate)"
+            },
+            "partB": {
+                "label": "Part B: After factoring (x^2 - 9) and canceling (x - 3), what is the simplified expression?",
+                "correctAnswer": "x + 3"
+            },
+            "partC": {
+                "label": "Part C: Evaluate the limit of (x + 3) as x approaches 3.",
+                "input1Label": "Limit:",
+                "input1Correct": 6,
+                "input2Label": "Confirm:",
+                "input2Correct": 6
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Direct substitution gives 0/0. Factoring the numerator: (x-3)(x+3) / (x-3) = x + 3. The limit as x -> 3 of (x+3) is 3 + 3 = 6."
+        },
+        "literacyB": {
+            "studentWork": "f(3) = (3^2 - 9) / (3 - 3) = 0 / 0. Because you can't divide by zero, the limit does not exist.",
+            "studentExplanation": "I plugged 3 in for x. The top is zero and the bottom is zero. You can't divide by zero, so there is no limit there.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "Function value at a point vs. the limit as it approaches that point",
+                    "How to divide by zero"
+                ],
+                "correct": "Function value at a point vs. the limit as it approaches that point"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They confused an indeterminate form (0/0) with a vertical asymptote",
+                    "They calculated 3 squared incorrectly"
+                ],
+                "correct": "They confused an indeterminate form (0/0) with a vertical asymptote"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Can you factor the numerator (x^2 - 9)? What happens if you do?",
+                    "Ask: What is 0 divided by 0?"
+                ],
+                "correct": "Ask: Can you factor the numerator (x^2 - 9)? What happens if you do?"
+            }
+        }
+    },
+    {
+        "id": "calculus-derivatives",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Derivatives & Tangent Lines",
+        "closingNarrative": "The power rule provides a formula for the slope, not the slope itself. Anchoring the derivative in its geometric interpretation—the steepness of a tangent line at a specific point—is essential for moving from abstract algebra to physical modeling.",
+        "artifact": "Find the slope of the tangent line to the curve y = 3x^2 - 5x + 2 at the point where x = 2.",
+        "conceptNarrative": "A derivative represents the instantaneous rate of change or the slope of a line tangent to a curve at a specific point.",
+        "arcZoomOut": {
+            "before": "Algebra I: Linear Equations. Understanding 'm' as constant steepness.",
+            "concept": "Derivatives. Understanding the derivative as a rate of change and the slope of a tangent line.",
+            "after": "Calculus: Optimization. Finding where the derivative equals zero to locate max/min values."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Using the power rule, what is the derivative (y') of the function?",
+                "options": [
+                    "Select an option...",
+                    "6x - 5",
+                    "6x^2 - 5",
+                    "3x - 5"
+                ],
+                "correctAnswer": "6x - 5"
+            },
+            "partB": {
+                "label": "Part B: To find the slope at x = 2, what must you do?",
+                "options": [
+                    "Select an option...",
+                    "Plug x = 2 into the derivative",
+                    "Set the derivative equal to 0",
+                    "Plug x = 2 into the original equation"
+                ],
+                "correctAnswer": "Plug x = 2 into the derivative"
+            },
+            "partC": {
+                "label": "Part C: What is the exact numerical slope of the tangent line? (y' at x = 2)",
+                "input1Label": "Slope (m):",
+                "input1Correct": 7,
+                "input2Label": "Confirm Slope:",
+                "input2Correct": 7
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Take derivative: y' = 6x - 5. Evaluate at x = 2: y'(2) = 6(2) - 5 = 12 - 5 = 7. The slope of the tangent line is 7."
+        },
+        "literacyB": {
+            "studentWork": "y' = 6x - 5. The slope of the tangent line is 6x - 5.",
+            "studentExplanation": "I used the power rule to take the derivative. The derivative is the slope, so the slope is 6x - 5.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The derivative is a function that generates slopes, not the numerical slope itself",
+                    "How to apply the power rule"
+                ],
+                "correct": "The derivative is a function that generates slopes, not the numerical slope itself"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They forgot to evaluate the derivative at the given x-value",
+                    "They calculated the derivative incorrectly"
+                ],
+                "correct": "They forgot to evaluate the derivative at the given x-value"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Does a line have a slope of '6x - 5', or does it have a slope of a specific number?",
+                    "Ask: What happens if you plug 2 into original equation?"
+                ],
+                "correct": "Ask: Does a line have a slope of '6x - 5', or does it have a slope of a specific number?"
+            }
+        }
+    },
+    {
+        "id": "calculus-integrals",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Definite Integrals",
+        "closingNarrative": "Integrals transform the abstract concept of accumulation into a precise calculation. By bridging geometric intuition with the Fundamental Theorem of Calculus, we help students see that F(b) - F(a) is more than just arithmetic—it's the net total of a function's journey.",
+        "artifact": "Evaluate the definite integral of f(x) = 2x + 3 from x = 1 to x = 4.",
+        "conceptNarrative": "If derivatives are about instant rates of change, integrals are about accumulation. Teaching the Fundamental Theorem of Calculus requires connecting the algebraic process of finding an antiderivative to the geometric reality of calculating the exact area under a curve.",
+        "arcZoomOut": {
+            "before": "Geometry: Area of Trapezoids. Students calculate the area of standard geometric shapes using discrete formulas.",
+            "concept": "Definite Integrals. Using the Fundamental Theorem of Calculus to find the exact area under a continuous curve over a specific interval.",
+            "after": "Calculus: Volumes of Revolution. Expanding the 2D area under a curve into 3D space by integrating the area of circular cross-sections."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the antiderivative, F(x), of 2x + 3?",
+                "options": [
+                    "Select an option...",
+                    "x^2 + 3",
+                    "x^2 + 3x",
+                    "2",
+                    "2x^2 + 3x"
+                ],
+                "correctAnswer": "x^2 + 3x"
+            },
+            "partB": {
+                "label": "Part B: Evaluate the antiderivative at the upper limit. What is F(4)?",
+                "correctAnswer": 28
+            },
+            "partC": {
+                "label": "Part C: Evaluate F(1), then subtract it from F(4). What is the exact area? (Enter in both boxes)",
+                "input1Label": "Net Area:",
+                "input1Correct": 24,
+                "input2Label": "Confirm Area:",
+                "input2Correct": 24
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Antiderivative: F(x) = x^2 + 3x. Evaluate at limits: F(4) = 4^2 + 3(4) = 16 + 12 = 28. F(1) = 1^2 + 3(1) = 1 + 3 = 4. Subtract: F(4) - F(1) = 28 - 4 = 24. The definite integral is 24."
+        },
+        "literacyB": {
+            "studentWork": "F(x) = x^2 + 3x. F(4) = 16 + 12 = 28. F(1) = 1 + 3 = 4. 4 - 28 = -24.",
+            "studentExplanation": "I found the antiderivative by adding 1 to the exponent and dividing. Then I plugged in the 1 and the 4, and subtracted them.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The Fundamental Theorem of Calculus: F(b) - F(a)",
+                    "How to find the derivative using the power rule",
+                    "How to find the area of a rectangle"
+                ],
+                "correct": "The Fundamental Theorem of Calculus: F(b) - F(a)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They subtracted the upper limit from the lower limit: F(a) - F(b)",
+                    "They evaluated the antiderivative incorrectly",
+                    "They took the derivative instead of the antiderivative"
+                ],
+                "correct": "They subtracted the upper limit from the lower limit: F(a) - F(b)"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: When finding the distance from mile marker 1 to mile marker 4, do you do 1 minus 4 or 4 minus 1?",
+                    "Ask: What is 4 squared?",
+                    "Ask: Did you remember to add C?"
+                ],
+                "correct": "Ask: When finding the distance from mile marker 1 to mile marker 4, do you do 1 minus 4 or 4 minus 1?"
+            }
+        }
+    },
+    {
+        "id": "calculus-optimization",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Optimization (Extrema)",
+        "closingNarrative": "Optimization connects calculus to decision-making. Helping students distinguish between 'where' the peak occurs and 'how high' it is transforms a symbolic exercise into a powerful tool for solving real-world constraints.",
+        "artifact": "Find the absolute maximum value of the function f(x) = -x^2 + 6x + 2.",
+        "conceptNarrative": "Optimization is the process of using derivatives to find minimum or maximum values. A crucial step is setting the first derivative to zero to identify critical points, then evaluating the original function at those points.",
+        "arcZoomOut": {
+            "before": "Algebra I: Vertex of a Parabola. Students use x = -b/(2a) to find the maximum or minimum of a quadratic.",
+            "concept": "Optimization. Using the first derivative to find critical points and evaluating the original function to find absolute extrema.",
+            "after": "Multivariable Calculus: Partial Derivatives. Finding saddle points and local extrema on 3D surfaces."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the first derivative, f'(x)?",
+                "options": [
+                    "Select an option...",
+                    "-2x + 6",
+                    "2x + 6",
+                    "-x + 6",
+                    "-2x"
+                ],
+                "correctAnswer": "-2x + 6"
+            },
+            "partB": {
+                "label": "Part B: Set the derivative equal to 0 to find the critical point. What is x?",
+                "correctAnswer": 3
+            },
+            "partC": {
+                "label": "Part C: Plug x = 3 back into the original function to find the maximum value. (Enter in both boxes)",
+                "input1Label": "Max Value:",
+                "input1Correct": 11,
+                "input2Label": "Confirm Value:",
+                "input2Correct": 11
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Derivative: f'(x) = -2x + 6. Set f'(x) = 0: -2x = -6 -> x = 3. Evaluate original: f(3) = -(3)^2 + 6(3) + 2 = -9 + 18 + 2 = 11. The absolute maximum value is 11."
+        },
+        "literacyB": {
+            "studentWork": "f'(x) = -2x + 6. 0 = -2x + 6. 2x = 6. x = 3. The maximum value is 3.",
+            "studentExplanation": "I took the derivative and set it to zero because that's where the peak is. I solved for x and got 3, so that's the highest the graph goes.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The difference between the location of an extremum (x) and the value of the extremum (y)",
+                    "How to set an equation equal to zero",
+                    "The Second Derivative Test"
+                ],
+                "correct": "The difference between the location of an extremum (x) and the value of the extremum (y)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They reported the x-coordinate of the critical point instead of plugging it into the original function to find the maximum value",
+                    "They calculated the derivative incorrectly",
+                    "They found a minimum instead of a maximum"
+                ],
+                "correct": "They reported the x-coordinate of the critical point instead of plugging it into the original function to find the maximum value"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Does x = 3 tell you *where* the peak is, or *how high* the peak is?",
+                    "Ask: What is negative 2 times 3?",
+                    "Ask: Did you check the endpoints?"
+                ],
+                "correct": "Ask: Does x = 3 tell you *where* the peak is, or *how high* the peak is?"
+            }
+        }
+    },
+    {
+        "id": "calculus-implicit",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Implicit Differentiation",
+        "closingNarrative": "Implicit differentiation is the master key for non-functions. By treating 'y' as a hidden function of 'x', students learn that differentiation is an operation that can be applied to any equation, not just those where y is isolated. Mastering the dy/dx artifact is the foundation for all future multivariable and differential equations work.",
+        "artifact": "Find the derivative dy/dx of the equation of a circle: x^2 + y^2 = 25.",
+        "conceptNarrative": "When an equation isn't solved for y, we use implicit differentiation. This requires applying the Chain Rule to any term containing y, which generates a dy/dx (or y') term.",
+        "arcZoomOut": {
+            "before": "Functions: Inverse Relations. Students graph circles and other relations that fail the vertical line test.",
+            "concept": "Implicit Differentiation. Using the Chain Rule to differentiate equations implicitly when they cannot be easily solved for y.",
+            "after": "Calculus: Related Rates. Differentiating geometric equations implicitly with respect to time (dt) to model dynamic physical situations."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the derivative of the x^2 term with respect to x?",
+                "correctAnswer": "2x"
+            },
+            "partB": {
+                "label": "Part B: What is the derivative of the y^2 term with respect to x? (Use y' for dy/dx)",
+                "options": [
+                    "Select an option...",
+                    "2y",
+                    "2y * y'",
+                    "y^2 * y'",
+                    "2x"
+                ],
+                "correctAnswer": "2y * y'"
+            },
+            "partC": {
+                "label": "Part C: After setting the derivative of 25 to 0 and solving for y', what is the final expression? (Use the format -x/y)",
+                "input1Label": "Numerator:",
+                "input1Correct": "-x",
+                "input2Label": "Denominator:",
+                "input2Correct": "y"
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Differentiate both sides with respect to x: (d/dx)[x^2 + y^2] = (d/dx)[25]. This gives 2x + 2y(dy/dx) = 0. Solve for dy/dx: 2y(dy/dx) = -2x -> dy/dx = -2x / 2y = -x/y."
+        },
+        "literacyB": {
+            "studentWork": "2x + 2y = 0. 2y = -2x. y = -x. The derivative is -x.",
+            "studentExplanation": "I took the derivative of each piece. The derivative of x^2 is 2x, the derivative of y^2 is 2y, and the derivative of 25 is 0. Then I just solved for y.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The Chain Rule and how it applies to dependent variables",
+                    "How to take the derivative of a constant",
+                    "How to isolate a variable"
+                ],
+                "correct": "The Chain Rule and how it applies to dependent variables"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They treated y as an independent variable and forgot to multiply by the derivative of the inside function (y')",
+                    "They forgot the derivative of 25 is 0",
+                    "They subtracted 2x incorrectly"
+                ],
+                "correct": "They treated y as an independent variable and forgot to multiply by the derivative of the inside function (y')"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: When you take the derivative of a term with 'y', what rule tells you to multiply by the derivative of y?",
+                    "Ask: Did you remember the negative sign?",
+                    "Ask: What is the derivative of x^2?"
+                ],
+                "correct": "Ask: When you take the derivative of a term with 'y', what rule tells you to multiply by the derivative of y?"
+            }
+        }
+    },
+    {
+        "id": "calculus-area-curves",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Area Between Curves",
+        "closingNarrative": "Calculating the area between curves is where algebra and calculus collide. By identifying intersection points as boundaries and visualizing 'top minus bottom' geometry, students move beyond rote integration and begin to use calculus to measure bounded physical spaces.",
+        "artifact": "Set up the integral to find the area bounded by the parabola y = x^2 and the line y = x.",
+        "conceptNarrative": "Finding the area between curves requires finding intersection points to use as limits of integration and determining which function is the 'upper' bound over that interval.",
+        "arcZoomOut": {
+            "before": "Algebra: Systems of Equations. Students find the intersection points of a line and a parabola algebraically.",
+            "concept": "Area Between Curves. Integrating the difference between an upper function and a lower function over a bounded interval.",
+            "after": "Calculus: Gini Index. Using the area between the Lorenz curve and the line of equality to measure income distribution in economics."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To find the limits of integration, set x^2 = x. What are the two intersection points?",
+                "options": [
+                    "Select an option...",
+                    "0 and 2",
+                    "1 and 2",
+                    "0 and 1",
+                    "-1 and 1"
+                ],
+                "correctAnswer": "0 and 1"
+            },
+            "partB": {
+                "label": "Part B: Between x = 0 and x = 1, which function is physically 'on top' (has larger y-values)?",
+                "options": [
+                    "Select an option...",
+                    "y = x^2",
+                    "y = x",
+                    "They are equal",
+                    "Neither"
+                ],
+                "correctAnswer": "y = x"
+            },
+            "partC": {
+                "label": "Part C: Evaluate the integral of (x - x^2) from 0 to 1. What is the exact area? (Enter numerator and denominator)",
+                "input1Label": "Numerator:",
+                "input1Correct": 1,
+                "input2Label": "Denominator:",
+                "input2Correct": 6
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Find intersections: x^2 = x -> x^2 - x = 0 -> x(x-1) = 0 -> x=0, x=1. Between 0 and 1, x > x^2. Integral from 0 to 1 of (x - x^2) dx = [x^2/2 - x^3/3] from 0 to 1 = (1/2 - 1/3) - 0 = 1/6."
+        },
+        "literacyB": {
+            "studentWork": "Integral from 0 to 1 of (x^2 - x) dx. (x^3)/3 - (x^2)/2. F(1) = 1/3 - 1/2 = -1/6. The area is -1/6.",
+            "studentExplanation": "I found the bounds were 0 and 1. Then I integrated x^2 minus x. I plugged in 1 and got negative 1/6. Area can't be negative, so it's just 1/6.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "That the integrand must be the top function minus the bottom function to ensure a positive area",
+                    "How to find the intersection points of two graphs",
+                    "The Power Rule for Integration"
+                ],
+                "correct": "That the integrand must be the top function minus the bottom function to ensure a positive area"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They subtracted the top function from the bottom function, resulting in a negative integral",
+                    "They integrated incorrectly",
+                    "They plugged the limits of integration in backwards"
+                ],
+                "correct": "They subtracted the top function from the bottom function, resulting in a negative integral"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If you plug x = 0.5 into both equations, which one gives you a higher number?",
+                    "Ask: What is 1/3 minus 1/2?",
+                    "Ask: Did you remember to add C?"
+                ],
+                "correct": "Ask: If you plug x = 0.5 into both equations, which one gives you a higher number?"
+            }
+        }
+    },
+    {
+        "id": "functions-domain",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Domain Restrictions",
+        "closingNarrative": "Mapping the domain is about understanding the inherent boundaries of mathematical functions. By learning to identify and 'punch out' values that break the rules of radicals or rational expressions, students gain a deeper respect for the continuity and constraints of the functions they model.",
+        "artifact": "Find the domain of the function f(x) = sqrt(x - 3) / (x - 5).",
+        "conceptNarrative": "Finding the domain of a function is about mapping the boundaries of mathematical reality. When a function has both a radical and a rational component, students must negotiate two competing realities: the inside of a square root cannot be negative, and a denominator cannot be zero.",
+        "arcZoomOut": {
+            "before": "Algebra I: Inequalities. Students solve and graph simple inequalities on a number line.",
+            "concept": "Domain of Functions. Identifying all valid input values by restricting denominators from being zero and radicands of even roots from being negative.",
+            "after": "Calculus: Continuity. Understanding domain restrictions is the first step in classifying points of discontinuity as removable (holes) or non-removable (vertical asymptotes)."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To keep the square root real, what must be true about the expression (x - 3)?",
+                "options": [
+                    "Select an option...",
+                    "It must be greater than or equal to 0",
+                    "It must be strictly greater than 0",
+                    "It must be less than 0",
+                    "It cannot equal 0"
+                ],
+                "correctAnswer": "It must be greater than or equal to 0"
+            },
+            "partB": {
+                "label": "Part B: To prevent division by zero, what value of x must be excluded from the denominator?",
+                "correctAnswer": 5
+            },
+            "partC": {
+                "label": "Part C: The domain is all numbers x >= 3, except x cannot equal 5. What are these two critical boundary numbers? (Enter smaller number first)",
+                "input1Label": "Smaller Boundary:",
+                "input1Correct": 3,
+                "input2Label": "Excluded Boundary:",
+                "input2Correct": 5
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Radical constraint: x - 3 >= 0 -> x >= 3. Rational constraint: x - 5 != 0 -> x != 5. Combined, the domain is [3, 5) U (5, infinity). All real numbers x such that x >= 3 and x != 5."
+        },
+        "literacyB": {
+            "studentWork": "x - 3 >= 0. x >= 3. The domain is [3, infinity).",
+            "studentExplanation": "You can't take the square root of a negative number, so x minus 3 has to be greater than or equal to zero. That means x can be 3 or any number bigger than 3.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The rule that denominators cannot equal zero",
+                    "How to solve an inequality",
+                    "How to write interval notation"
+                ],
+                "correct": "The rule that denominators cannot equal zero"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They forgot to check the denominator for domain restrictions",
+                    "They solved x - 3 >= 0 incorrectly",
+                    "They used brackets instead of parentheses for infinity"
+                ],
+                "correct": "They forgot to check the denominator for domain restrictions"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: What happens to the entire fraction if you plug x = 5 into the denominator?",
+                    "Ask: Is 3 greater than or equal to zero?",
+                    "Ask: Did you remember to flip the inequality sign?"
+                ],
+                "correct": "Ask: What happens to the entire fraction if you plug x = 5 into the denominator?"
+            }
+        }
+    },
+    {
+        "id": "functions-piecewise",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Piecewise Functions",
+        "closingNarrative": "Piecewise functions are a bridge between algebraic calculation and algorithmic logic. Understanding that 'gatekeeper' constraints dictate which rule to follow allows students to model complex, changing scenarios where a single rule isn't enough to describe the whole reality.",
+        "artifact": "Let f(x) = { 2x + 1 for x < 4 ; x^2 - 5 for x >= 4 }. Evaluate f(4).",
+        "conceptNarrative": "A piecewise function uses multiple rules to define outputs across different parts of the domain. Evaluating requires first identifying which domain constraint the input satisfies and then applying the corresponding rule.",
+        "arcZoomOut": {
+            "before": "Algebra I: Evaluating Functions. Students substitute numerical inputs into single algebraic expressions.",
+            "concept": "Piecewise Functions. Evaluating functions defined by different rules over distinct intervals of the domain.",
+            "after": "Calculus: Differentiability. Piecewise functions are the primary tool for testing if a function is continuous and differentiable at a specific 'corner' or 'cusp'."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Look at the domain constraints. Which condition does the input x = 4 satisfy?",
+                "options": [
+                    "Select an option...",
+                    "x < 4",
+                    "x >= 4",
+                    "Both",
+                    "Neither"
+                ],
+                "correctAnswer": "x >= 4"
+            },
+            "partB": {
+                "label": "Part B: Based on that condition, which rule must you use to evaluate f(4)?",
+                "options": [
+                    "Select an option...",
+                    "2x + 1",
+                    "x^2 - 5",
+                    "(2x + 1) + (x^2 - 5)",
+                    "You can choose either one"
+                ],
+                "correctAnswer": "x^2 - 5"
+            },
+            "partC": {
+                "label": "Part C: Evaluate the correct rule at x = 4. What is the value of f(4)? (Enter in both boxes)",
+                "input1Label": "Value:",
+                "input1Correct": 11,
+                "input2Label": "Confirm Value:",
+                "input2Correct": 11
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Input x = 4 satisfies the condition x >= 4. Therefore, use f(x) = x^2 - 5. Evaluated at x = 4: (4)^2 - 5 = 16 - 5 = 11. f(4) = 11."
+        },
+        "literacyB": {
+            "studentWork": "Top: 2(4) + 1 = 9. Bottom: (4)^2 - 5 = 16 - 5 = 11. 9 + 11 = 20. f(4) = 20.",
+            "studentExplanation": "I plugged 4 into the top equation and got 9. Then I plugged 4 into the bottom equation and got 11. I added them together to get the total function value.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "How to interpret domain constraints (inequalities) to choose the correct rule",
+                    "How to evaluate an expression",
+                    "The definition of an asymptote"
+                ],
+                "correct": "How to interpret domain constraints (inequalities) to choose the correct rule"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They evaluated both rules and added the results, fundamentally misunderstanding that a function can only have one output per input",
+                    "They evaluated the top equation incorrectly",
+                    "They chose the rule for x < 4 instead of x >= 4"
+                ],
+                "correct": "They evaluated both rules and added the results, fundamentally misunderstanding that a function can only have one output per input"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Can the number 4 be strictly less than 4 and greater than or equal to 4 at the exact same time?",
+                    "Ask: What is 4 squared minus 5?",
+                    "Ask: Did you remember to subtract 1?"
+                ],
+                "correct": "Ask: Can the number 4 be strictly less than 4 and greater than or equal to 4 at the exact same time?"
+            }
+        }
+    },
+    {
+        "id": "functions-rational",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Rational Functions & Asymptotes",
+        "closingNarrative": "Rational functions reveal the boundaries of algebraic stability. By distinguishing between vertical asymptotes and removable holes, and by analyzing end behavior through leading terms, students learn to predict the global behavior of functions that are defined by ratios of polynomials.",
+        "artifact": "Find the vertical and horizontal asymptotes of the rational function f(x) = (2x^2 - 8) / (x^2 - x - 6).",
+        "conceptNarrative": "Rational functions are defined by ratios of polynomials. Key features include vertical asymptotes (non-removable infinite discontinuities), holes (removable discontinuities), and horizontal asymptotes (the limit of the function as x approaches infinity).",
+        "arcZoomOut": {
+            "before": "Algebra II: Factoring Polynomials. Students learn to factor quadratics and identify difference of squares.",
+            "concept": "Rational Functions. Graphing rational functions and identifying vertical asymptotes, horizontal asymptotes, and removable discontinuities (holes).",
+            "after": "Calculus: Limits at Infinity. Using limits to rigorously define and calculate horizontal asymptotes as x approaches positive or negative infinity."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Factor the numerator 2(x^2 - 4) and the denominator (x^2 - x - 6). Which factor cancels out?",
+                "options": [
+                    "Select an option...",
+                    "(x - 2)",
+                    "(x + 2)",
+                    "(x - 3)",
+                    "2"
+                ],
+                "correctAnswer": "(x + 2)"
+            },
+            "partB": {
+                "label": "Part B: The remaining factor in the denominator creates the vertical asymptote. What is the equation of the vertical asymptote?",
+                "options": [
+                    "Select an option...",
+                    "x = 3",
+                    "x = -2",
+                    "x = 2",
+                    "y = 3"
+                ],
+                "correctAnswer": "x = 3"
+            },
+            "partC": {
+                "label": "Part C: The degrees of the numerator and denominator are the same (x^2). Divide the leading coefficients to find the horizontal asymptote. (Enter the y-value in both boxes)",
+                "input1Label": "y =",
+                "input1Correct": 2,
+                "input2Label": "Confirm:",
+                "input2Correct": 2
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Factor: f(x) = 2(x-2)(x+2) / ((x-3)(x+2)). The factor (x+2) cancels, creating a hole at x = -2. The remaining factor in the denominator (x-3) creates a vertical asymptote at x = 3. Leading coefficients are 2 and 1, so the horizontal asymptote is y = 2/1 = 2."
+        },
+        "literacyB": {
+            "studentWork": "Denominator is x^2 - x - 6 = (x - 3)(x + 2). Setting to zero gives x = 3 and x = -2. So there are two vertical asymptotes at x = 3 and x = -2.",
+            "studentExplanation": "I factored the bottom part of the fraction and set it equal to zero. Whatever makes the bottom zero is a vertical asymptote.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The difference between a vertical asymptote and a removable discontinuity (hole)",
+                    "How to factor a difference of squares",
+                    "How to find a y-intercept"
+                ],
+                "correct": "The difference between a vertical asymptote and removable discontinuity (hole)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They assumed all zeros of the denominator create vertical asymptotes without checking if the factor cancels with the numerator",
+                    "They factored the denominator incorrectly",
+                    "They confused vertical and horizontal asymptotes"
+                ],
+                "correct": "They assumed all zeros of the denominator create vertical asymptotes without checking if the factor cancels with the numerator"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Can you factor the numerator (2x^2 - 8)? Does anything cancel out with the bottom?",
+                    "Ask: What is negative 3 times positive 2?",
+                    "Ask: What happens when x gets really large?"
+                ],
+                "correct": "Ask: Can you factor the numerator (2x^2 - 8)? Does anything cancel out with the bottom?"
+            }
+        }
+    },
+    {
+        "id": "functions-sequences",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Geometric Sequences",
+        "closingNarrative": "Geometric sequences are the discrete cousins of exponential functions. Mastering the explicit formula—and the specific 'n-1' shift required to align with the first term—is essential for students transitioning from continuous algebra to the discrete logic of series and calculus convergence.",
+        "artifact": "A geometric sequence has a first term of a_1 = 3 and a common ratio of r = 2. Write the explicit formula for the sequence and find the 6th term.",
+        "conceptNarrative": "A geometric sequence is a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio. The explicit formula for the nth term is a_n = a_1 * r^(n-1).",
+        "arcZoomOut": {
+            "before": "Algebra I: Exponential Growth. Students model continuous growth using y = a(b)^x.",
+            "concept": "Geometric Sequences. Writing explicit and recursive formulas for sequences that grow by a common ratio.",
+            "after": "Calculus: Infinite Series. Determining if an infinite geometric series converges or diverges based on the value of its common ratio."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: For the explicit formula a_n = a_1 * r^(n-1), what is the correct exponent?",
+                "options": [
+                    "Select an option...",
+                    "n",
+                    "n - 1",
+                    "n + 1",
+                    "2n"
+                ],
+                "correctAnswer": "n - 1"
+            },
+            "partB": {
+                "label": "Part B: What is the correct explicit formula for this sequence?",
+                "options": [
+                    "Select an option...",
+                    "a_n = 3 * 2^n",
+                    "a_n = 2 * 3^(n-1)",
+                    "a_n = 3 * 2^(n-1)",
+                    "a_n = 3 * n^2"
+                ],
+                "correctAnswer": "a_n = 3 * 2^(n-1)"
+            },
+            "partC": {
+                "label": "Part C: Evaluate the formula to find the 6th term (a_6). (Enter the value in both boxes)",
+                "input1Label": "6th Term:",
+                "input1Correct": 96,
+                "input2Label": "Confirm:",
+                "input2Correct": 96
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Explicit formula: a_n = 3 * 2^(n-1). For the 6th term: a_6 = 3 * 2^(6-1) = 3 * 2^5 = 3 * 32 = 96. The 6th term is 96."
+        },
+        "literacyB": {
+            "studentWork": "a_n = 3 * 2^n. a_6 = 3 * 2^6 = 3 * 64 = 192. The 6th term is 192.",
+            "studentExplanation": "The starting number is 3 and it multiplies by 2 every time. So the formula is 3 times 2 to the power of n. I plugged in 6 for n and got 192.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The difference between an explicit formula and an exponential function (starting at term 1 vs time 0)",
+                    "How to calculate 2 to the 6th power",
+                    "How to find a common ratio"
+                ],
+                "correct": "The difference between an explicit formula and an exponential function (starting at term 1 vs time 0)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They used 'n' as the exponent instead of 'n-1', effectively finding the 7th term instead of the 6th",
+                    "They multiplied 3 and 2 together before applying the exponent",
+                    "They used the common ratio as the base instead of the starting term"
+                ],
+                "correct": "They used 'n' as the exponent instead of 'n-1', effectively finding the 7th term instead of the 6th"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If you plug in n = 1 to your formula (3 * 2^n), do you get the correct first term of 3?",
+                    "Ask: What is 2 times 2 times 2?",
+                    "Ask: Did you write a recursive formula?"
+                ],
+                "correct": "Ask: If you plug in n = 1 to your formula (3 * 2^n), do you get the correct first term of 3?"
+            }
+        }
+    },
+    {
+        "id": "number-dimensional-analysis",
+        "domain": "Number & Quantity",
+        "conceptTopic": "Dimensional Analysis",
+        "closingNarrative": "Dimensional analysis transforms unit conversion from a guessing game into a structural algebraic process. By treating units as variables that must be canceled, students move beyond rote multiplication and gain a powerful tool for navigating the complex quantities and ratios found in advanced science and engineering.",
+        "artifact": "A car is traveling at a speed of 60 miles per hour. Convert this speed to feet per second. (1 mile = 5280 feet, 1 hour = 3600 seconds).",
+        "conceptNarrative": "When converting units, dimensional analysis treats units like algebraic variables. If a unit is in the numerator, the conversion factor must have that same unit in the denominator to cancel it out, allowing you to bridge between systems of measurement with precision.",
+        "arcZoomOut": {
+            "before": "Grade 6: Ratios & Rates. Students understand the concept of a unit rate (e.g., miles per hour).",
+            "concept": "Dimensional Analysis. Multiplying by a series of carefully chosen fractions (equal to 1) to convert units while preserving the underlying quantity.",
+            "after": "Chemistry & Physics: Stoichiometry. Dimensional analysis is the bedrock for converting between moles, grams, and atoms in complex scientific equations."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To cancel out 'miles' (which is in the numerator), what must your first conversion factor be?",
+                "options": [
+                    "Select an option...",
+                    "5280 ft / 1 mi",
+                    "1 mi / 5280 ft",
+                    "3600 sec / 1 hr",
+                    "1 hr / 3600 sec"
+                ],
+                "correctAnswer": "5280 ft / 1 mi"
+            },
+            "partB": {
+                "label": "Part B: To cancel out 'hours' (which is in the denominator), what must your second conversion factor be?",
+                "options": [
+                    "Select an option...",
+                    "3600 sec / 1 hr",
+                    "1 hr / 3600 sec",
+                    "5280 ft / 1 mi",
+                    "1 mi / 5280 ft"
+                ],
+                "correctAnswer": "1 hr / 3600 sec"
+            },
+            "partC": {
+                "label": "Part C: Multiply the fractions: 60 * 5280 / 3600. What is the speed in feet per second?",
+                "input1Label": "ft/sec:",
+                "input1Correct": 88,
+                "input2Label": "Confirm:",
+                "input2Correct": 88
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Set up the conversion chain: (60 mi / 1 hr) * (5280 ft / 1 mi) * (1 hr / 3600 sec). The 'mi' and 'hr' units cancel out. Multiply the numerators: 60 * 5280 * 1 = 316,800. Divide by the denominator: 316,800 / 3600 = 88. The speed is 88 feet per second."
+        },
+        "literacyB": {
+            "studentWork": "60 * (1 / 5280) * 3600 = 40.9 feet per second.",
+            "studentExplanation": "I knew there were 5280 feet in a mile, so I divided by that. Then I multiplied by 3600 because there are 3600 seconds in an hour.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "That units can be canceled out just like variables if they appear in both the numerator and denominator",
+                    "How to multiply fractions",
+                    "How to divide by decimals"
+                ],
+                "correct": "That units can be canceled out just like variables if they appear in both the numerator and denominator"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They multiplied when they should have divided, and divided when they should have multiplied",
+                    "They used the wrong conversion factor for feet to miles",
+                    "They forgot to multiply by 60"
+                ],
+                "correct": "They multiplied when they should have divided, and divided when they should have multiplied"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If 'miles' is on top of your starting fraction, where does 'miles' need to be in your conversion fraction to cross it out?",
+                    "Ask: What is 60 times 3600?",
+                    "Ask: Can you round to the nearest whole number?"
+                ],
+                "correct": "Ask: If 'miles' is on top of your starting fraction, where does 'miles' need to be in your conversion fraction to cross it out?"
+            }
+        }
+    },
+    {
+        "id": "number-rational-exponents",
+        "domain": "Number & Quantity",
+        "conceptTopic": "Rational Exponents",
+        "closingNarrative": "A rational exponent is a compact map of two distinct algebraic operations. By decoding the denominator as the 'root' and the numerator as the 'power', students bridge simple multiplication with complex radical notation, unlocking the ability to differentiate and integrate radical functions in calculus.",
+        "artifact": "Evaluate the expression without a calculator: 27^(2/3).",
+        "conceptNarrative": "A fractional exponent x^(m/n) represents both a power (m) and a root (n). Generally, it is easier to take the root first (the denominator) to decrease the value, then apply the power (the numerator) to find the final result.",
+        "arcZoomOut": {
+            "before": "Grade 8: Integer Exponents. Students evaluate expressions with positive and negative integer exponents.",
+            "concept": "Rational Exponents. Translating between fractional exponent notation (x^(m/n)) and radical notation (nth root of x^m).",
+            "after": "Calculus: The Power Rule. Converting radical expressions into rational exponents is the mandatory first step before taking their derivative."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: In the fractional exponent 2/3, which number tells you the index of the root?",
+                "options": [
+                    "Select an option...",
+                    "2",
+                    "3",
+                    "27",
+                    "There is no root"
+                ],
+                "correctAnswer": "3"
+            },
+            "partB": {
+                "label": "Part B: What is the cube root of 27?",
+                "correctAnswer": 3
+            },
+            "partC": {
+                "label": "Part C: Take that result and apply the power of 2. What is the final exact value? (Enter in both boxes)",
+                "input1Label": "Value:",
+                "input1Correct": 9,
+                "input2Label": "Confirm:",
+                "input2Correct": 9
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Expression: 27^(2/3). The denominator (3) signifies the cube root: cuberoot(27) = 3. The numerator (2) signifies the power: 3^2 = 9. The final value is 9."
+        },
+        "literacyB": {
+            "studentWork": "27 * (2/3) = 18. The answer is 18.",
+            "studentExplanation": "When a number has a fraction next to it, you multiply the number by the fraction. 27 divided by 3 is 9, and 9 times 2 is 18.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The structural meaning of a rational exponent: x^(m/n)",
+                    "How to multiply fractions by whole numbers",
+                    "How to find the least common denominator"
+                ],
+                "correct": "The structural meaning of a rational exponent: x^(m/n)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They treated the exponent as a coefficient and multiplied the base by the fraction",
+                    "They evaluated the square root instead of the cube root",
+                    "They flipped the numerator and denominator"
+                ],
+                "correct": "They treated the exponent as a coefficient and multiplied the base by the fraction"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Does an exponent mean 'multiply by this number', or does it mean something else?",
+                    "Ask: What is 27 divided by 3?",
+                    "Ask: Can you write 2/3 as a decimal?"
+                ],
+                "correct": "Ask: Does an exponent mean 'multiply by this number', or does it mean something else?"
+            }
+        }
+    },
+    {
+        "id": "number-complex",
+        "domain": "Number & Quantity",
+        "conceptTopic": "Complex Number Operations",
+        "closingNarrative": "Complex numbers expand the real number system into a two-dimensional plane. By mastering the FOIL process and the i^2 = -1 identity, students learn that imaginary numbers aren't just 'impossible' roots—they are a consistent mathematical architecture used to model rotation, fluid dynamics, and quantum mechanics.",
+        "artifact": "Multiply the complex numbers: (3 + 4i)(2 - 5i). Write the result in standard form (a + bi).",
+        "conceptNarrative": "Arithmetic with complex numbers follows the same distributive rules as polynomials. However, because i is defined as the unit whose square is -1, students must evaluate any i^2 terms to simplify the final expression into the real and imaginary components (a + bi).",
+        "arcZoomOut": {
+            "before": "Algebra I: Multiplying Binomials. Students use the distributive property (FOIL) to multiply expressions like (3 + 4x)(2 - 5x).",
+            "concept": "Complex Numbers. Performing arithmetic operations with complex numbers and applying the identity i^2 = -1.",
+            "after": "Pre-Calculus: Polar Coordinates. Complex numbers are graphed on the complex plane and multiplied by adding their rotational angles and multiplying their magnitudes."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Multiply the first terms (3 * 2) and the outer terms (3 * -5i). What do you get?",
+                "options": [
+                    "Select an option...",
+                    "6 - 15i",
+                    "6 + 15i",
+                    "5 - 15i",
+                    "6 - 8i"
+                ],
+                "correctAnswer": "6 - 15i"
+            },
+            "partB": {
+                "label": "Part B: Multiply the inner terms (4i * 2) and the last terms (4i * -5i). What do you get?",
+                "options": [
+                    "Select an option...",
+                    "8i - 20i^2",
+                    "8i + 20i^2",
+                    "8i - 20",
+                    "6i - 20i^2"
+                ],
+                "correctAnswer": "8i - 20i^2"
+            },
+            "partC": {
+                "label": "Part C: Combine all terms, remembering that i^2 = -1. What is the final complex number in a + bi form?",
+                "input1Label": "Real Part (a):",
+                "input1Correct": 26,
+                "input2Label": "Imaginary Coefficient (b):",
+                "input2Correct": -7
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "FOIL: (3 * 2) + (3 * -5i) + (4i * 2) + (4i * -5i) = 6 - 15i + 8i - 20i^2. Combine like terms: 6 - 7i - 20i^2. Substitute i^2 = -1: 6 - 7i - 20(-1) = 6 - 7i + 20 = 26 - 7i. The standard form is 26 - 7i."
+        },
+        "literacyB": {
+            "studentWork": "FOIL: 6 - 15i + 8i - 20i^2. Combined: 6 - 7i - 20i^2. The answer is 6 - 7i - 20i^2.",
+            "studentExplanation": "I multiplied the binomials together like normal and combined the regular 'i' terms. I couldn't combine the i^2 with anything else.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The fundamental definition of the imaginary unit: i^2 = -1",
+                    "How to add negative numbers",
+                    "The difference of squares formula"
+                ],
+                "correct": "The fundamental definition of the imaginary unit: i^2 = -1"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They treated 'i' strictly as a variable and failed to evaluate i^2",
+                    "They multiplied 4 by -5 incorrectly",
+                    "They combined the real number 6 with the -7i incorrectly"
+                ],
+                "correct": "They treated 'i' strictly as a variable and failed to evaluate i^2"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: What does the symbol 'i' actually stand for? What happens when you square a square root?",
+                    "Ask: What is negative 15 plus 8?",
+                    "Ask: Did you write it in a + bi form?"
+                ],
+                "correct": "Ask: What does the symbol 'i' actually stand for? What happens when you square a square root?"
+            }
+        }
+    },
+    {
+        "id": "number-matrices",
+        "domain": "Number & Quantity",
+        "conceptTopic": "Matrix Multiplication",
+        "closingNarrative": "Matrix multiplication is a dot-product engine for multi-dimensional data. By moving away from element-by-element intuition and mastering the row-by-column 'dive-bomber' motion, students gain the ability to chain together linear transformations—a skill foundational to modern computer graphics, data science, and physics.",
+        "artifact": "Multiply the following 2x2 matrices: Matrix A = [[1, 2], [3, 4]] and Matrix B = [[2, 0], [1, 5]]. Find the resulting 2x2 matrix.",
+        "conceptNarrative": "Matrix multiplication is not element-wise; it requires taking the dot product of the rows of the first matrix and the columns of the second matrix. The element in the ith row and jth column of the product is the sum of the products of the elements of the ith row of A and the jth column of B.",
+        "arcZoomOut": {
+            "before": "Algebra I: Systems of Equations. Students solve systems of two linear equations using substitution or elimination.",
+            "concept": "Matrix Operations. Multiplying matrices by taking the dot product of the rows of the first matrix and the columns of the second.",
+            "after": "Linear Algebra: Transformations. Using matrix multiplication to rotate, scale, and shear coordinates in multi-dimensional space."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: To find the top-left element, take the dot product of Row 1 of Matrix A [1, 2] and Column 1 of Matrix B [2, 1]. (1*2 + 2*1). What is the value?",
+                "correctAnswer": 4
+            },
+            "partB": {
+                "label": "Part B: To find the top-right element, take the dot product of Row 1 of A [1, 2] and Column 2 of B [0, 5]. What is the value?",
+                "correctAnswer": 10
+            },
+            "partC": {
+                "label": "Part C: Evaluate the bottom row. What are the values of the bottom-left and bottom-right elements?",
+                "input1Label": "Bottom-Left:",
+                "input1Correct": 10,
+                "input2Label": "Bottom-Right:",
+                "input2Correct": 20
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Product AB = [[(1*2 + 2*1), (1*0 + 2*5)], [(3*2 + 4*1), (3*0 + 4*5)]] = [[(2 + 2), (0 + 10)], [(6 + 4), (0 + 20)]] = [[4, 10], [10, 20]]."
+        },
+        "literacyB": {
+            "studentWork": "Top row: 1*2 = 2, 2*0 = 0. Bottom row: 3*1 = 3, 4*5 = 20. The matrix is [[2, 0], [3, 20]].",
+            "studentExplanation": "I just multiplied the numbers that were in the exact same spots in both boxes.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "That matrix multiplication requires the dot product of rows and columns",
+                    "How to multiply zero",
+                    "That matrix addition is commutative"
+                ],
+                "correct": "That matrix multiplication requires the dot product of rows and columns"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They multiplied corresponding elements instead of performing row-by-column multiplication",
+                    "They multiplied the columns of A by the rows of B",
+                    "They added the matrices instead of multiplying"
+                ],
+                "correct": "They multiplied corresponding elements instead of performing row-by-column multiplication"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Does matrix multiplication work exactly like matrix addition, or do you have to match rows with columns?",
+                    "Ask: What is 4 times 5?",
+                    "Ask: Can you find the determinant?"
+                ],
+                "correct": "Ask: Does matrix multiplication work exactly like matrix addition, or do you have to match rows with columns?"
+            }
+        }
+    },
+    {
+        "id": "number-vectors",
+        "domain": "Number & Quantity",
+        "conceptTopic": "Vector Addition",
+        "closingNarrative": "Vectors are the bridge between algebraic numbers and geometric motion. By mastering component-wise addition, students move beyond simple scalar arithmetic and gain the ability to model complex physical systems where direction and magnitude must be preserved independently.",
+        "artifact": "Given vector u = <3, -2> and vector v = <-1, 5>, find the resultant vector w = u + v.",
+        "conceptNarrative": "A vector represents a quantity with both magnitude and direction. In a 2D plane, vectors are added component-wise: the x-components are combined to find the new horizontal displacement, and the y-components are combined to find the new vertical displacement.",
+        "arcZoomOut": {
+            "before": "Geometry: Translations. Students slide shapes across a coordinate plane using rules like (x + 3, y - 2).",
+            "concept": "Vector Operations. Adding vectors component-wise to find a resultant vector.",
+            "after": "Physics: Resultant Forces. Using vector addition to calculate the net force acting on an object when multiple forces are applied simultaneously."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Add the horizontal (x) components of the two vectors: 3 + (-1).",
+                "correctAnswer": 2
+            },
+            "partB": {
+                "label": "Part B: Add the vertical (y) components of the two vectors: -2 + 5.",
+                "correctAnswer": 3
+            },
+            "partC": {
+                "label": "Part C: What is the resultant vector <x, y>? (Enter the x and y components)",
+                "input1Label": "x-component:",
+                "input1Correct": 2,
+                "input2Label": "y-component:",
+                "input2Correct": 3
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "To add vectors u = <3, -2> and v = <-1, 5>, add their respective components: x = 3 + (-1) = 2 and y = -2 + 5 = 3. The resultant vector w is <2, 3>."
+        },
+        "literacyB": {
+            "studentWork": "u + v = 3 - 2 - 1 + 5 = 5. The new vector is 5.",
+            "studentExplanation": "I added all the numbers inside the brackets together to find the total value of the two vectors.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "That adding two vectors produces a new vector with distinct x and y components",
+                    "How to add negative numbers",
+                    "How to find the magnitude of a vector"
+                ],
+                "correct": "That adding two vectors produces a new vector with distinct x and y components"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They collapsed a 2D vector into a 1D scalar by adding all components together",
+                    "They subtracted the vectors instead of adding them",
+                    "They multiplied the x and y components"
+                ],
+                "correct": "They collapsed a 2D vector into a 1D scalar by adding all components together"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If you walk 3 blocks east and 2 blocks south, can you represent your final location with just the number 5?",
+                    "Ask: Did you remember to make the 1 negative?",
+                    "Ask: What is the Pythagorean theorem?"
+                ],
+                "correct": "Ask: If you walk 3 blocks east and 2 blocks south, can you represent your final location with just the number 5?"
+            }
+        }
+    },
+    {
+        "id": "number-radicals",
+        "domain": "Number & Quantity",
+        "conceptTopic": "Operating with Radicals",
+        "closingNarrative": "Simplifying radicals reveals the underlying structure of irrational numbers. By factoring out perfect squares to find like terms, students learn to treat radicals as precise mathematical units—a skill essential for maintaining exact values in geometry, trigonometry, and calculus.",
+        "artifact": "Simplify the expression completely: sqrt(50) + sqrt(18).",
+        "conceptNarrative": "Radicals can only be added or subtracted if they are 'like terms' (have the same radicand). If radicands differ, they must be simplified by factoring out perfect squares to see if a common irrational identity can be revealed.",
+        "arcZoomOut": {
+            "before": "Algebra I: Prime Factorization. Students break numbers down into their prime components.",
+            "concept": "Simplifying Radicals. Extracting perfect squares from radicands to identify and combine like terms.",
+            "after": "Geometry: Special Right Triangles. Simplifying radicals is a mandatory skill for expressing exact side lengths in 45-45-90 and 30-60-90 triangles."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Factor out the largest perfect square from sqrt(50). What does it simplify to?",
+                "options": [
+                    "Select an option...",
+                    "25*sqrt(2)",
+                    "5*sqrt(2)",
+                    "2*sqrt(5)",
+                    "10*sqrt(5)"
+                ],
+                "correctAnswer": "5*sqrt(2)"
+            },
+            "partB": {
+                "label": "Part B: Factor out the largest perfect square from sqrt(18). What does it simplify to?",
+                "options": [
+                    "Select an option...",
+                    "9*sqrt(2)",
+                    "2*sqrt(3)",
+                    "3*sqrt(2)",
+                    "6*sqrt(3)"
+                ],
+                "correctAnswer": "3*sqrt(2)"
+            },
+            "partC": {
+                "label": "Part C: Combine the like terms: 5*sqrt(2) + 3*sqrt(2). (Enter the coefficient and the radicand)",
+                "input1Label": "Coefficient (outside):",
+                "input1Correct": 8,
+                "input2Label": "Radicand (inside):",
+                "input2Correct": 2
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Simplify sqrt(50): sqrt(25 * 2) = 5*sqrt(2). Simplify sqrt(18): sqrt(9 * 2) = 3*sqrt(2). Combine: 5*sqrt(2) + 3*sqrt(2) = 8*sqrt(2). The final value is 8*sqrt(2)."
+        },
+        "literacyB": {
+            "studentWork": "sqrt(50) + sqrt(18) = sqrt(50 + 18) = sqrt(68).",
+            "studentExplanation": "Since they are both square roots, I just added the numbers on the inside together to get 68.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The rule that you can only add radicals if their radicands (inside numbers) are exactly the same",
+                    "How to find the square root of 68",
+                    "How to multiply radicals"
+                ],
+                "correct": "The rule that you can only add radicals if their radicands (inside numbers) are exactly the same"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They added the radicands directly without factoring them into like terms first",
+                    "They simplified sqrt(50) incorrectly",
+                    "They multiplied 50 by 18"
+                ],
+                "correct": "They added the radicands directly without factoring them into like terms first"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Does the square root of 9 plus the square root of 16 equal the square root of 25? Try the math.",
+                    "Ask: What is 50 plus 18?",
+                    "Ask: Can you divide 68 by 2?"
+                ],
+                "correct": "Ask: Does the square root of 9 plus the square root of 16 equal the square root of 25? Try the math."
+            }
+        }
+    },
+    {
+        "id": "stats-outliers",
+        "domain": "Statistics & Probability",
+        "conceptTopic": "Measures of Center & Outliers",
+        "closingNarrative": "In statistics, the mean and median provide different perspectives on the center of a data set. By calculating the effect of an outlier, students learn that while the mean is a highly precise measure of the average, the median is a more robust indicator of the typical value in skewed data.",
+        "artifact": "A student scores 85, 88, 90, and 92 on their first four tests. On the fifth test, they score a 10. Calculate the new mean and median, and determine which measure of center was most affected by the outlier.",
+        "conceptNarrative": "Statistics often involves summarizing data with a single value (mean, median, or mode). An outlier is an extreme data point that differs significantly from the rest of the set. Understanding how outliers pull the mean away from the 'typical' center is essential for meaningful data interpretation.",
+        "arcZoomOut": {
+            "before": "Grade 6: Displaying Data. Students summarize numerical data sets in relation to their context, reporting the number of observations and describing how data was measured.",
+            "concept": "Effects of Outliers. Recognizing how extreme data points drastically shift the mean but leave the median relatively unchanged.",
+            "after": "AP Statistics: Robust Statistics. Exploring estimators that are not unduly affected by small departures from model assumptions."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Order the five scores from least to greatest. What is the new median (the exact middle number)?",
+                "correctAnswer": 88
+            },
+            "partB": {
+                "label": "Part B: Add all five scores together and divide by 5. What is the new mean?",
+                "correctAnswer": 73
+            },
+            "partC": {
+                "label": "Part C: The original mean was 88.75. Which measure of center was most affected by the outlier?",
+                "options": [
+                    "Select an option...",
+                    "The Mean",
+                    "The Median",
+                    "They were affected equally",
+                    "Neither was affected"
+                ],
+                "correctAnswer": "The Mean"
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Sorted data: 10, 85, 88, 90, 92. The median is the middle value, 88. The mean is (10+85+88+90+92)/5 = 365/5 = 73. The mean dropped significantly (from 88.75 to 73), while the median barely changed. Therefore, the mean was most affected."
+        },
+        "literacyB": {
+            "studentWork": "The median was 89, and now it's 90. The mean was 88.75, and now it's 73. So the mean changed a lot, but the median stayed the same.",
+            "studentExplanation": "To find the new median, I just picked the middle number from the list as it was written: 85, 88, 90, 92, 10. The middle is 90.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "That you must sort the data from least to greatest before finding the median",
+                    "How to calculate the mean",
+                    "The definition of an outlier"
+                ],
+                "correct": "That you must sort the data from least to greatest before finding the median"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They found the median of the unsorted list",
+                    "They added the numbers incorrectly",
+                    "They misidentified which measure changed the most"
+                ],
+                "correct": "They found the median of the unsorted list"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Can you find the 'middle' of a list if the numbers aren't in order?",
+                    "Ask: What is 85 plus 10?",
+                    "Ask: Did you divide by 5?"
+                ],
+                "correct": "Ask: Can you find the 'middle' of a list if the numbers aren't in order?"
+            }
+        }
+    },
+    {
+        "id": "stats-empirical",
+        "domain": "Statistics & Probability",
+        "conceptTopic": "The Empirical Rule (Normal Distribution)",
+        "closingNarrative": "The Empirical Rule is the conceptual gateway to probability in a normal world. By understanding that almost all data in a normal distribution falls within three standard deviations, students can quickly estimate outcomes without reliance on lookup tables or complex technology.",
+        "artifact": "The heights of a certain species of tree are normally distributed with a mean of $\\mu = 50$ feet and a standard deviation of $\\sigma = 5$ feet. Approximately what percentage of the trees are between 45 and 55 feet tall?",
+        "conceptNarrative": "In a normal distribution, data symmetrically clusters around the mean. The Empirical Rule (68-95-99.7 rule) states that approximately 68% of data falls within one standard deviation, 95% within two, and 99.7% within three standard deviations of the mean.",
+        "arcZoomOut": {
+            "before": "Algebra I: Standard Deviation. Students calculate standard deviation as a measure of spread for discrete datasets.",
+            "concept": "Normal Distributions. Using the Empirical Rule to estimate the percentage of a normally distributed population that falls within 1, 2, or 3 standard deviations of the mean.",
+            "after": "Statistics: Hypothesis Testing. Using the area under the normal curve to calculate p-values and determine statistical significance."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: The value 45 is how many standard deviations below the mean of 50?",
+                "correctAnswer": 1
+            },
+            "partB": {
+                "label": "Part B: The value 55 is how many standard deviations above the mean of 50?",
+                "correctAnswer": 1
+            },
+            "partC": {
+                "label": "Part C: According to the Empirical Rule, what percentage of data falls within exactly 1 standard deviation of the mean? (Enter the number only)",
+                "input1Label": "Percentage:",
+                "input1Correct": 68,
+                "input2Label": "Confirm:",
+                "input2Correct": 68
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Check the distance from the mean (50): 50 - 45 = 5 (exactly 1 standard deviation), and 55 - 50 = 5 (exactly 1 standard deviation). The interval [45, 55] covers 1 standard deviation in both directions. According to the Empirical Rule, approximately 68% of data falls within this range."
+        },
+        "literacyB": {
+            "studentWork": "Z = (45 - 50) / 5 = -1. Z = (55 - 50) / 5 = 1. The answer is 95%.",
+            "studentExplanation": "I found the Z-scores for both heights. I remembered the rule for the normal curve is 68 for half, 95 for one standard deviation, and 99.7 for two.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The correct percentages of the Empirical Rule (68-95-99.7)",
+                    "How to calculate a Z-score",
+                    "How to calculate standard deviation"
+                ],
+                "correct": "The correct percentages of the Empirical Rule (68-95-99.7)"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They confused the 68% tier (1 standard deviation) with the 95% tier (2 standard deviations)",
+                    "They calculated the Z-scores incorrectly",
+                    "They subtracted 45 from 55"
+                ],
+                "correct": "They confused the 68% tier (1 standard deviation) with the 95% tier (2 standard deviations)"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Can you draw the bell curve and label the 68%, 95%, and 99.7% regions?",
+                    "Ask: What is 55 minus 50?",
+                    "Ask: Did you look up the Z-score on a table?"
+                ],
+                "correct": "Ask: Can you draw the bell curve and label the 68%, 95%, and 99.7% regions?"
+            }
+        }
+    },
+    {
+        "id": "stats-probability-dependent",
+        "domain": "Statistics & Probability",
+        "conceptTopic": "Conditional Probability",
+        "closingNarrative": "Conditional probability is a story of dynamic change. By recognizing that event outcomes 'without replacement' fundamentally alter the sample space, students bridge simple probability fractions with the complex dependencies that define risk assessment and decision-making in the real world.",
+        "artifact": "A bag contains 5 red marbles and 3 blue marbles. If you pull two marbles out of the bag one after another *without replacement*, what is the probability that both marbles are red?",
+        "conceptNarrative": "Dependent events occur when the outcome of one event affects the probability of another. In 'without replacement' scenarios, the total number of items—and potentially the number of favorable outcomes—decreases after the first draw, necessitating a shift in the probability fraction for the subsequent event.",
+        "arcZoomOut": {
+            "before": "Grade 7: Simple Probability. Students find the probability of a single event as a fraction of favorable outcomes over total outcomes.",
+            "concept": "Dependent Events. Calculating the probability of compound events where the occurrence of the first event affects the probability of the second.",
+            "after": "Statistics: Bayes' Theorem. Using conditional probability to calculate the likelihood of an event based on prior knowledge of conditions that might be related."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: What is the probability of pulling the first red marble? (Enter numerator and denominator)",
+                "input1Label": "Numerator:",
+                "input1Correct": 5,
+                "input2Label": "Denominator:",
+                "input2Correct": 8
+            },
+            "partB": {
+                "label": "Part B: After one red marble is removed, how many red marbles and total marbles are left in the bag?",
+                "options": [
+                    "Select an option...",
+                    "5 red, 8 total",
+                    "4 red, 7 total",
+                    "4 red, 8 total",
+                    "5 red, 7 total"
+                ],
+                "correctAnswer": "4 red, 7 total"
+            },
+            "partC": {
+                "label": "Part C: Multiply (5/8) * (4/7). What is the final simplified probability? (Enter numerator and denominator)",
+                "input1Label": "Numerator:",
+                "input1Correct": 5,
+                "input2Label": "Denominator:",
+                "input2Correct": 14
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "First draw: P(Red1) = 5/8. Second draw (given first was red): P(Red2 | Red1) = 4/7. Multiply: (5/8) * (4/7) = 20/56 = 5/14. The probability is 5/14."
+        },
+        "literacyB": {
+            "studentWork": "(5/8) * (5/8) = 25/64.",
+            "studentExplanation": "The chance of getting a red marble is 5 out of 8. Since you want to do it twice, you just multiply the same fraction twice.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "The difference between 'with replacement' (independent) and 'without replacement' (dependent) events",
+                    "How to simplify fractions",
+                    "How to add 5 and 5"
+                ],
+                "correct": "The difference between 'with replacement' (independent) and 'without replacement' (dependent) events"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They treated the events as independent and failed to reduce the count of red marbles and total marbles for the second draw",
+                    "They multiplied the numerators incorrectly",
+                    "They added the fractions instead of multiplying"
+                ],
+                "correct": "They treated the events as independent and failed to reduce the count of red marbles and total marbles for the second draw"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: If you keep the first marble in your pocket, are there still 8 marbles left in the bag?",
+                    "Ask: What is 8 times 8?",
+                    "Ask: Is 25/64 more or less than half?"
+                ],
+                "correct": "Ask: If you keep the first marble in your pocket, are there still 8 marbles left in the bag?"
+            }
+        }
+    },
+    {
+        "id": "stats-expected-value",
+        "domain": "Statistics & Probability",
+        "conceptTopic": "Expected Value",
+        "closingNarrative": "Expected value serves as a weighted average that reveals the long-run balance point of a decision. By transitioning from simple arithmetic means to probability-weighted sums, students gain the mathematical foresight required to assess risk, value insurance premiums, and predict outcomes in complex random systems.",
+        "artifact": "In a game, you have a 20% chance of winning $50 and an 80% chance of losing $10. What is the expected value of playing this game once?",
+        "conceptNarrative": "The expected value of a discrete random variable is the sum of the products of each possible outcome and its probability. It represents the 'long-run average' outcome if the process were repeated many times.",
+        "arcZoomOut": {
+            "before": "Grade 6: Mean. Students calculate the arithmetic mean by summing values and dividing by the count.",
+            "concept": "Expected Value. Calculating the mean of a discrete random variable by summing the products of each outcome and its probability.",
+            "after": "Actuarial Science: Risk Assessment. Using expected value to determine insurance premiums and assess the financial impact of rare events."
+        },
+        "computation": {
+            "partA": {
+                "label": "Part A: Multiply the winning amount ($50) by its probability (0.20). What is the value?",
+                "correctAnswer": 10
+            },
+            "partB": {
+                "label": "Part B: Multiply the losing amount (-$10) by its probability (0.80). What is the value?",
+                "correctAnswer": -8
+            },
+            "partC": {
+                "label": "Part C: Add these two weighted values together (10 + -8). What is the expected value? (Enter in both boxes)",
+                "input1Label": "Expected Value ($):",
+                "input1Correct": 2,
+                "input2Label": "Confirm:",
+                "input2Correct": 2
+            }
+        },
+        "literacyA": {
+            "modelAnswer": "Expected Value = (Win Amount * P(Win)) + (Loss Amount * P(Loss)) = ($50 * 0.20) + (-$10 * 0.80) = $10 - $8 = $2. The expected value is $2."
+        },
+        "literacyB": {
+            "studentWork": "50 + (-10) = 40. 40 / 2 = 20. The expected value is $20.",
+            "studentExplanation": "I took the two amounts you can get and found the average. $50 minus $10 is $40, and half of that is $20.",
+            "dropdown1": {
+                "options": [
+                    "Select...",
+                    "That expected value is a weighted average based on probability, not a simple arithmetic mean",
+                    "How to subtract 10 from 50",
+                    "The definition of a median"
+                ],
+                "correct": "That expected value is a weighted average based on probability, not a simple arithmetic mean"
+            },
+            "dropdown2": {
+                "options": [
+                    "Select...",
+                    "They calculated a simple mean (sum/2) instead of weighting the outcomes by their respective probabilities (20% and 80%)",
+                    "They forgot the negative sign for the loss",
+                    "They multiplied 50 by 0.80"
+                ],
+                "correct": "They calculated a simple mean (sum/2) instead of weighting the outcomes by their respective probabilities (20% and 80%)"
+            },
+            "dropdown3": {
+                "options": [
+                    "Select...",
+                    "Ask: Is it equally likely to win $50 and lose $10, or is one much more common than the other?",
+                    "Ask: What is 40 divided by 2?",
+                    "Ask: Can you play the game 100 times?"
+                ],
+                "correct": "Ask: Is it equally likely to win $50 and lose $10, or is one much more common than the other?"
+            }
+        }
+    },
+    {
+        "id": "functions-step",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Step Functions",
+        "closingNarrative": "Step functions reveal the discrete nature of mathematical modeling. By understanding that costs or physical states can 'jump' instantaneously, students move beyond continuous linear models and gain the ability to represent real-world thresholds and digital logic.",
+        "artifact": "A parking garage charges $5 for the first hour and $2 for each additional hour or fraction thereof. Evaluate the cost function C(t) for 2.5 hours.",
+        "conceptNarrative": "Step functions, like the greatest integer function, challenge the student's desire for continuity. In the real world, costs often 'jump' rather than glide. The pedagogical trap is rounding in the wrong direction. Students must learn that in a 'ceiling' or 'floor' context, 2.1 and 2.9 often yield the exact same output.",
+        "arcZoomOut": {
+            "before": "Algebra I: Linear Modeling. Students model constant rates of change using smooth lines.",
+            "concept": "Step Functions. Evaluating functions that remain constant over intervals and jump at specific integer or threshold values.",
+            "after": "Computer Science: Floor/Ceiling Functions. Essential for logic gates, array indexing, and discrete data processing."
+        },
+        "computation": {
+            "partA": { "label": "For 2.5 hours, the first hour is $5. How many 'additional' hours (or fractions) are there?", "correctAnswer": 2 },
+            "partB": { "label": "Multiply the 2 additional hours by the $2 rate. What is that subtotal?", "correctAnswer": 4 },
+            "partC": { "label": "Add the initial $5. What is the total cost C(2.5)?", "correctAnswer": 9 }
+        },
+        "literacyA": {
+            "modelAnswer": "For 2.5 hours, the first hour costs $5. The additional time is 1.5 hours. Since the garage charges for 'each additional hour or fraction thereof', 1.5 hours counts as 2 additional billing units. $2 * 2 = $4. Total cost: $5 + $4 = $9."
+        },
+        "literacyB": {
+            "studentWork": "5 + 2(1.5) = 8. The cost is $8.",
+            "studentExplanation": "I used the linear formula y = 5 + 2x where x is the extra time. 2 times 1.5 is 3, plus 5 is 8.",
+            "dropdown1": {
+                "options": ["Select...", "The discrete nature of step functions", "How to multiply decimals"],
+                "correct": "The discrete nature of step functions"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They treated a jump-increment cost as a continuous linear rate", "They forgot the base fee"],
+                "correct": "They treated a jump-increment cost as a continuous linear rate"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: If you stay for 2.1 hours, does the garage charge you for 1.1 hours or the full second extra hour?", "Ask: What is 2 times 1.5?"],
+                "correct": "Ask: If you stay for 2.1 hours, does the garage charge you for 1.1 hours or the full second extra hour?"
+            }
+        }
+    },
+    {
+        "id": "functions-symmetry",
+        "domain": "Functions & Calculus",
+        "conceptTopic": "Odd and Even Functions",
+        "closingNarrative": "Algebraic symmetry is a powerful tool for simplifying complexity. By mastering the f(-x) test, students gain a deeper understanding of function parity, which serves as a critical prerequisite for advanced calculus integration and signal processing.",
+        "artifact": "Determine if the function f(x) = x^4 - 3x^2 + 5 is even, odd, or neither.",
+        "conceptNarrative": "Symmetry is a mathematical shortcut. An even function is a mirror image across the y-axis, while an odd function has rotational symmetry around the origin. Students often try to guess based on the 'highest power,' but they must learn the formal test: replace x with (-x). If the function remains unchanged, the mirror is held up correctly.",
+        "arcZoomOut": {
+            "before": "Geometry: Reflections. Students reflect points across the x and y axes.",
+            "concept": "Function Symmetry. Using f(-x) to algebraically classify functions as even, odd, or neither.",
+            "after": "Calculus: Definite Integrals of Symmetric Functions. Integrating an odd function over a symmetric interval [-a, a] always equals zero, a massive time-saver."
+        },
+        "computation": {
+            "partA": { "label": "Replace x with (-x). What is (-x)^4?", "options": ["x^4", "-x^4"], "correctAnswer": "x^4" },
+            "partB": { "label": "What is (-x)^2?", "options": ["x^2", "-x^2"], "correctAnswer": "x^2" },
+            "partC": { "label": "Since every term remained the same after substituting (-x), the function is:", "options": ["Even", "Odd", "Neither"], "correctAnswer": "Even" }
+        },
+        "literacyA": {
+            "modelAnswer": "Substitute (-x) for x: f(-x) = (-x)^4 - 3(-x)^2 + 5. Since an even power of a negative is positive, f(-x) = x^4 - 3x^2 + 5. Because f(-x) = f(x), the function is even."
+        },
+        "literacyB": {
+            "studentWork": "f(-x) = -x^4 + 3x^2 + 5. It changed signs, so it is Odd.",
+            "studentExplanation": "I put a negative in front of the x's. Since they are negative now, the whole function is odd.",
+            "dropdown1": {
+                "options": ["Select...", "The algebraic rule for even powers of negative numbers", "How to graph a parabola"],
+                "correct": "The algebraic rule for even powers of negative numbers"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They incorrectly simplified (-x)^4 as -x^4", "They forgot the constant term"],
+                "correct": "They incorrectly simplified (-x)^4 as -x^4"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: What is (-1) * (-1) * (-1) * (-1)? Is it positive or negative?", "Ask: Is the graph a mirror?"],
+                "correct": "Ask: What is (-1) * (-1) * (-1) * (-1)? Is it positive or negative?"
+            }
+        }
+    },
+    {
+        "id": "stats-bias",
+        "domain": "Statistics & Probability",
+        "conceptTopic": "Sampling & Bias",
+        "closingNarrative": "The quality of statistical inference is limited by the quality of the sample. By identifying convenience bias, students learn that data transparency starts at the point of collection, ensuring that their conclusions accurately represent the population they intend to study.",
+        "artifact": "A principal wants to know student opinions on school lunch. They survey the first 50 students who enter the cafeteria. Is this a Simple Random Sample (SRS)?",
+        "conceptNarrative": "In statistics, how you ask is as important as what you ask. A 'convenience sample' is the enemy of truth. Students often confuse 'random' with 'haphazard.' A true SRS gives every single member of the population an equal mathematical chance of being selected. If you only stand by the door, you've already introduced bias before a single question is answered.",
+        "arcZoomOut": {
+            "before": "Grade 7: Populations and Samples. Students understand that a sample is a subset of a population.",
+            "concept": "Sampling Methods. Distinguishing between random, stratified, and convenience sampling to identify potential bias.",
+            "after": "Inferential Statistics: Confidence Intervals. The validity of a confidence interval relies entirely on the assumption that the data came from a random sample."
+        },
+        "computation": {
+            "partA": { "label": "Does every student in the school have an equal chance of being among the FIRST 50 to enter the cafeteria?", "options": ["Yes", "No"], "correctAnswer": "No" },
+            "partB": { "label": "What type of sampling is this?", "options": ["Simple Random", "Convenience", "Stratified", "Systematic"], "correctAnswer": "Convenience" },
+            "partC": { "label": "If students who eat early have different opinions than those who eat late, the results will be:", "options": ["Biased", "Unbiased", "Perfectly Accurate"], "correctAnswer": "Biased" }
+        },
+        "literacyA": {
+            "modelAnswer": "This is not an SRS because students who do not enter the cafeteria or who enter late have zero chance of being selected. Because the sample is based on ease of access (first 50), it is a convenience sample likely to contain bias."
+        },
+        "literacyB": {
+            "studentWork": "It's random because the principal didn't pick specific people, they just took whoever walked in.",
+            "studentExplanation": "Since the principal didn't know who was coming in, it was a random group of 50 students.",
+            "dropdown1": {
+                "options": ["Select...", "The formal definition of a Simple Random Sample (SRS)", "How to calculate a percentage"],
+                "correct": "The formal definition of a Simple Random Sample (SRS)"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They confused 'haphazard' selection with 'random' selection", "They assumed the sample size was too small"],
+                "correct": "They confused 'haphazard' selection with 'random' selection"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: Do students who arrive early maybe have different habits than those who arrive late?", "Ask: How many students are in the school?"],
+                "correct": "Ask: Do students who arrive early maybe have different habits than those who arrive late?"
+            }
+        }
+    },
+    {
+        "id": "stats-complement",
+        "domain": "Statistics & Probability",
+        "conceptTopic": "Probability of the Complement",
+        "closingNarrative": "The Law of Complements is the most efficient balancing tool in probability. By viewing the sample space as a zero-sum game between what 'is' and what 'is not,' students can solve complex multi-event problems with simple subtraction.",
+        "artifact": "The probability of a weather station correctly predicting rain is 0.72. What is the probability that the station predicts rain incorrectly?",
+        "conceptNarrative": "The Law of Complements is the 'Subtractive Shortcut.' In a binary universe, if event A doesn't happen, its complement must. Students often try to find complex ways to calculate the 'failure' rate when they simply need to subtract the 'success' rate from 100%. This is the foundation of logical mutual exclusivity.",
+        "arcZoomOut": {
+            "before": "Grade 6: Decimals. Students practice subtracting decimals from whole numbers like 1.0.",
+            "concept": "Complementary Events. Using P(A') = 1 - P(A) to find the probability of an event not occurring.",
+            "after": "Binomial Probability. Calculating the probability of 'at least one' success by finding the complement of 'zero' successes."
+        },
+        "computation": {
+            "partA": { "label": "What is the sum of the probabilities of all possible outcomes in a sample space?", "correctAnswer": 1 },
+            "partB": { "label": "To find the complement of 0.72, what is the subtraction problem?", "options": ["1 - 0.72", "0.72 - 1", "1 + 0.72", "1 / 0.72"], "correctAnswer": "1 - 0.72" },
+            "partC": { "label": "What is the probability of an incorrect prediction? (Enter in both boxes)", "input1Label": "P(A'):", "input1Correct": 0.28, "input2Label": "Confirm:", "input2Correct": 0.28 }
+        },
+        "literacyA": {
+            "modelAnswer": "The sum of all probabilities must be 1. The complement of predicting rain correctly is predicting rain incorrectly. P(Incorrect) = 1 - P(Correct) = 1 - 0.72 = 0.28."
+        },
+        "literacyB": {
+            "studentWork": "0.72 / 100 = 0.0072. The answer is 0.0072.",
+            "studentExplanation": "Probability is always out of 100, so I divided the number by 100 to see what was left.",
+            "dropdown1": {
+                "options": ["Select...", "The Complement Rule: P(A) + P(not A) = 1", "How to convert a decimal to a percent"],
+                "correct": "The Complement Rule: P(A) + P(not A) = 1"
+            },
+            "dropdown2": {
+                "options": ["Select...", "They treated probability as a percentage conversion rather than a subtractive complement", "They subtracted 0.72 from 10 instead of 1"],
+                "correct": "They treated probability as a percentage conversion rather than a subtractive complement"
+            },
+            "dropdown3": {
+                "options": ["Select...", "Ask: If there is a 72% chance of rain, what is the percentage chance that it DOESN'T rain?", "Ask: What is 1.00 minus 0.72?"],
+                "correct": "Ask: If there is a 72% chance of rain, what is the percentage chance that it DOESN'T rain?"
+            }
+        }
+    }
+]
