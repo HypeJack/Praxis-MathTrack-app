@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import { ScoreRequest, ScoreResponse } from '@/types/score';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY || 'MISSING' });
+const apiKey = process.env.ANTHROPIC_API_KEY;
+const client = apiKey ? new Anthropic({ apiKey }) : null;
 
 const SCORE_LABELS: Record<number, ScoreResponse['label']> = {
   0: 'no_credit',
@@ -30,6 +31,11 @@ export async function POST(req: NextRequest) {
 
     const systemPrompt = buildSystemPrompt(body);
     const userPrompt   = buildUserPrompt(body);
+
+    if (!client) {
+      console.warn('[MathTrack Scorer] Anthropic API Key missing. Returning fallback.');
+      return NextResponse.json(buildFallback(1, 'Scoring unavailable (API Key missing). Your response has been saved.'), { status: 200 });
+    }
 
     const message = await client.messages.create({
       model: 'claude-3-5-sonnet-20240620', // Using the latest available stable model name if not exactly what's in spec

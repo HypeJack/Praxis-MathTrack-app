@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
@@ -28,8 +29,20 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body suppressHydrationWarning className={`${inter.variable} ${playfair.variable} antialiased bg-canvas text-text-main min-h-screen flex justify-center`}>
-                {children}
+                <HydrationGuard>{children}</HydrationGuard>
             </body>
         </html>
     );
+}
+
+function HydrationGuard({ children }: { children: React.ReactNode }) {
+    const [mounted, setMounted] = React.useState(false);
+    React.useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        return <div className="min-h-screen bg-bone-white" />; // Minimal splash to prevent jitter
+    }
+    return <>{children}</>;
 }
